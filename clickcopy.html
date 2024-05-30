@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Copy Email</title>
+</head>
+<body>
+    <p>Texto para copiar: <span id="textToCopy">Seu texto aqui</span></p>
+    <button id="copyButton">Copiar</button>
+
+    <script>
+        const copyButton = document.getElementById('copyButton');
+        const textToCopy = document.getElementById('textToCopy');
+
+        copyButton.addEventListener('click', () => {
+            const range = document.createRange();
+            range.selectNode(textToCopy);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+
+            alert('Texto copiado para a área de transferência!');
+        });
+    </script>
+</body>
+</html>

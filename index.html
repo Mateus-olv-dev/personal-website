@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mateusolv.dev</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="imgs/icons/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  <header id="cabecalho">
+    <h2 id="nome_cabecalho">Mateus Oliveira<span class="detail_01">.</span></h2>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#banner" class="home"><img src="imgs/icons/casa.png" alt="home" width="22px" height="22px"></a></li>
+
+        <li><a href="#skills" class="navegation">Skills</a></li>
+        
+        <li><a href="#projetos" class="navegation" style="background-color: #8234E9;;">Projetos</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <section id="banner">
+    <div class="foto">
+
+    </div>
+
+    <div id="perfil">
+
+      <h1 class="nome_banner">Mateus Oliveira</h1>
+
+      <h2 class="subtitulos_banner"><span class="detail_sub">Estudante</span> de Análise e Desenvolvimento de Sistemas <br> && <span class="detail_sub"> Apaixonado por programação </span> .</h2>
+
+
+
+
+
+
+      <nav id="container">
+        <div class="esfera" class="esfera_01"> <a href=https://www.linkedin.com/in/mateus-olv-dev/" target="_blank">
+            <img src="imgs/icons/linkedin.png" width="30px" height="30px">
+          </a>
+        </div>
+
+        <div class="esfera" class="esfera_02"> <a href="https://github.com/Mateus-olv-dev" target="_blank">
+            <img src="imgs/icons/github.png" width="38px" height="38px">
+          </a></div>
+
+
+          <div class="email_box">
+            <p class="email">mateusolv.dev@gmail.com</p>
+            <p class="email_after" style="display: none;">Copiado  área de transferência!</p>
+            <button class="copy_button">
+              <img src="imgs/icons/copy.png" class="img_button1">
+              <img src="imgs/icons/ok.png" width="20px" height="20px" class="img_button2" style="display: none;">
+            </button>
+        </div>
+       
+      
+      </nav>
+
+
+
+    </div>
+
+
+  </section>
+  <section class="feed" id="skills">
+    <h2>Skills</h2>
+
+
+    <div class="detail_02"></div>
+
+    <div id="skills_badges">
+      <img alt="Static Badge" src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5&logoColor=white" height="40px" class="badges">
+      <img alt="Static Badge" src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white" height="40px" class="badges">
+      <img alt="Static Badge" src="https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=Javascript&logoColor=white" height="40px" class="badges">
+      <img alt="Static Badge" src="https://img.shields.io/badge/Mysql-%2326557C?style=for-the-badge&logo=mysql&logoColor=white" height="40px" class="badges">
+      <img alt="Static Badge" src="https://img.shields.io/badge/GIT-%23F05032?style=for-the-badge&logo=git&logoColor=white" height="40px" class="badges">
+    </div>
+
+
+
+
+
+  </section>
+  <section class="feed" id="projetos"">
+    <h2>Projetos</h2>
+    <div class=" detail_02">
+    </div>
+
+  </section>
+
+  <section class="feed" id="contato">
+    <h2>Contatos</h2>
+    <div class="detail_02"></div>
+
+  </section>
+  <footer>
+    <div id="rodape">
+      <p>Desenvolvido por Mateus F. Oliveira | <span style="color: #8234E9;">2024</span>
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    const copyButton = document.querySelector('.copy_button');
+    const textToCopy = document.querySelector('.email');
+    const emailAfter = document.querySelector('.email_after')
+    const imgButton1 = document.querySelector('.img_button1')
+    const imgButton2 = document.querySelector('.img_button2')
+
+
+    const nVisivel = () => {
+      textToCopy.style.display = "none"
+    }
+
+    const visible = () => {
+      emailAfter.style.display = "block"
+    }
+
+    const trocarImg = () => {
+      imgButton1.style.display = "none"
+      imgButton2.style.display = "block"
+
+     
+    }
+
+
+    copyButton.addEventListener('click', () => {
+        const range = document.createRange();
+        range.selectNode(textToCopy);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+      //  mudarTxt()
+          nVisivel();
+          visible();
+          trocarImg();
+        ;
+    });
+  
+    
+</script>
+</body>
+
+</html>
