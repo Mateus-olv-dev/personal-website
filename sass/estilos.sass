@@ -1,0 +1,320 @@
+@use 'variaveis'
+@use 'animacoes'
+    
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: "Teachers"
+
+html
+  scroll-behavior: smooth
+
+
+body 
+  background-color: variaveis.$body-color
+
+//
+
+/* Estilo da barra de rolagem inteira */
+html ::-webkit-scrollbar 
+  width: 5px //Definindo a largura da scrollbar 
+
+
+/* Estilo do polegar (a parte que você arrasta) */
+html ::-webkit-scrollbar-thumb 
+  background: linear-gradient(to left, variaveis.$roxo-escuro, variaveis.$roxo-claro)
+  border-radius: 20px
+  border: 5px solid variaveis.$roxo-escuro //Adicionando uma borda ao polegar 
+
+
+/* Adicional: Estilo do track (fundo da scrollbar) */
+html ::-webkit-scrollbar-track 
+  background: variaveis.$cor-secundaria // Cor de fundo da track 
+  border-radius: 20px  //Bordas arredondadas para o track 
+
+
+#cabecalho
+  background-color: variaveis.$cor-secundaria
+  height: 12vh
+  width: 100%
+  position: fixed
+  box-shadow: 10px 5px 15px #0B0E12
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.texto_cabecalho 
+  color: variaveis.$text-color
+  margin-left: 150px
+  font-size: 30px
+
+.span_texto_cabecalho
+  color: variaveis.$roxo-claro
+  font-size: 40px
+  margin-left: 10px
+
+.menu 
+  padding: 10px 0
+
+.menu ul 
+  list-style: none
+  display: flex
+  justify-content: center
+  margin-right: 70px
+
+.menu li
+  margin-right: 20px
+
+.navegation
+  font-size: 18px
+  letter-spacing: 0.5px
+  text-decoration: none
+  color: variaveis.$text-color
+  font-weight: 600
+  padding: 8px
+  border-radius: 10px
+
+.navegation:hover 
+  // background-color: #3E3E40
+  background-color:  #1A2029
+  transition: 0.3s
+
+.navegation_projetos
+  background-color: variaveis.$roxo-claro
+  font-size: 18px
+  letter-spacing: 0.5px
+  text-decoration: none
+  color: variaveis.$text-color
+  font-weight: 600
+  padding: 8px  
+  border-radius: 10px
+  border: variaveis.$roxo-claro solid 1.5px
+
+
+.navegation_projetos:hover 
+  background-color: variaveis.$roxo-escuro
+  transition: 0.3s
+
+
+  
+.button_home 
+  padding: 15px 10px 5px 10px
+  border-radius: 10px
+
+
+.button_home:hover 
+  transition: 0.3s
+  background-color: #1A2029
+
+#banner
+  background-color: variaveis.$cor-secundaria
+  height: 87vh
+  box-shadow: 10px 5px 15px variaveis.$cor-secundaria
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.foto 
+  width: 300px
+  height: 300px
+  border-radius: 50%
+  border: variaveis.$roxo-claro solid 1.5px
+  margin: 150px 50px 50px 150px
+  background-color: #1A2029
+
+
+#perfil
+  display: flex
+  flex-direction: column
+  padding-right: 200px
+  align-items: flex-start
+  margin:170px 0px 15px 0px 
+
+.nome_banner 
+  color: variaveis.$text-color
+  font-size: 80px
+
+
+.subtitulos_banner 
+  color: variaveis.$text-color
+  line-height: 40px
+
+
+.detail_sub 
+  background: linear-gradient(to left, variaveis.$roxo-escuro, variaveis.$roxo-claro)
+  padding: 2px
+
+#container_sociais
+  display: flex
+  gap: 28px
+  margin: 60px 0px 0px 0px
+  align-items: center
+  text-decoration: none
+
+#container_sociais a 
+  border-radius: 50%
+  width: 60px
+  height: 60px
+
+
+.esfera 
+  width: 60px
+  height: 60px
+  background-color: variaveis.$roxo-claro
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+.esfera a 
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+.esfera:hover 
+  animation: girar2 0.5s normal
+  background-color: variaveis.$roxo-escuro
+  transition: 0.5s
+
+
+
+.email_box 
+  background-color: #1A2029
+  width: 30vw
+  height: 60px
+  border: variaveis.$roxo-escuro solid 1px
+  border-radius: 20px 
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.email 
+  color: variaveis.$text-color
+  font-size: 20px
+  margin-left: 60px
+  text-align: center
+  font-weight: 500
+
+.email_after 
+  color: variaveis.$text-color
+  margin-left: 28px
+  font-size: 20px
+  font-weight: 500
+
+
+.copy_button 
+  background-color: variaveis.$roxo-claro
+  height: 60px
+  width: 60px
+  border-radius: 0px 20px 20px 0px
+  display: flex
+  justify-content: center
+  align-items: center
+  border: none
+  cursor: pointer
+
+.copy_button:hover 
+  background-color: variaveis.$roxo-escuro
+  transition: 0.2s
+
+.copy_button:active 
+  background-color: variaveis.$roxo-claro
+
+
+.email_box:hover 
+  animation: girar2 0.3s normal
+  opacity: 80%
+
+
+
+
+.feed
+  margin: 80px 150px 30px 150px
+  font-size: 35px
+  color: variaveis.$text-color
+  text-shadow: #141414 3px 3px 15px
+ 
+
+.detail_02 
+  background: linear-gradient(to right, variaveis.$roxo-escuro, variaveis.$roxo-claro)
+  height: 0.5vh
+  width: 20vh
+  margin-top: 5px
+  border-radius: 15px
+  box-shadow: #141414 5px 5px 10px
+
+#skills
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+
+#skills_badges 
+  margin-top: 30px
+  display: flex
+  gap: 10px
+
+.badges 
+  box-shadow: #141414 5px 5px 10px
+
+
+// #projetos
+
+.container_projetos
+  margin-top: 40px
+  margin-bottom: 200px
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 50px
+
+.card_projetos
+  // background-color: variaveis.$card_color
+  padding: 20px
+  text-align: center
+  height: 40vh
+  border-radius: 20px
+  // border: 1px solid variaveis.$roxo-escuro
+  box-shadow: #141414 5px 5px 10px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  position: relative
+  // overflow: hidden
+
+.card_descri
+  font-size: 20px
+  color: variaveis.$text-color
+  position: absolute
+  bottom: -75px
+  background-color: variaveis.$roxo-claro
+  width: 270px
+  border-radius: 20px
+  padding: 20px
+  opacity: 0
+  // transform: translateY(100%)
+  transition: opacity 0.5s, transform 0.5s
+
+.card_projetos:hover
+  // animation: shadow-drop-center 0.5s 
+  box-shadow: 0px 0px 20px 15px variaveis.$roxo-escuro 
+
+.card_projetos:hover .card_descri
+  animation: slide-top 0.5s both
+  opacity: 1
+  // transform: translateY(0)
+
+#rodape 
+  background-color: variaveis.$cor-secundaria
+  height: 12vh
+  width: 100%
+  text-align: center
+  font-size: 18px
+  color: #C0CAAD
+  font-weight: 100
+  display: flex
+  justify-content: center
+  align-items: center

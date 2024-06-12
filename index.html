@@ -5,29 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mateusolv.dev</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="imgs/icons/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   <header id="cabecalho">
-    <h2 id="nome_cabecalho">Mateus Oliveira<span class="detail_01">.</span></h2>
+    <h2 class="texto_cabecalho">Mateus Oliveira<span class="span_texto_cabecalho">.</span></h2>
 
     <nav class="menu">
       <ul>
-        <li><a href="#banner" class="home"><img src="imgs/icons/casa.png" alt="home" width="22px" height="22px"></a></li>
+        <li><a href="#banner" class="button_home"><img src="imgs/icons/casa.png" alt="home" width="22px" height="22px"></a></li>
 
         <li><a href="#skills" class="navegation">Skills</a></li>
         
-        <li><a href="#projetos" class="navegation" style="background-color: #8234E9;;">Projetos</a></li>
+        <li><a href="#projetos" class="navegation_projetos">Projetos</a></li>
       </ul>
     </nav>
 
   </header>
   <section id="banner">
-    <div class="foto">
-      <img src="imgs/eu.png"></img>
+    <div>
+      <img src="imgs/icons/Screenshot_20240610_235037_WhatsApp-removebg-preview.png" class="foto"></img>
     </div>
 
     <div id="perfil">
@@ -41,7 +44,7 @@
 
 
 
-      <nav id="container">
+      <nav id="container_sociais">
         <div class="esfera" class="esfera_01"> <a href=https://www.linkedin.com/in/mateus-olv-dev/" target="_blank">
             <img src="imgs/icons/linkedin.png" width="30px" height="30px">
           </a>
@@ -70,18 +73,18 @@
 
 
   </section>
+
   <section class="feed" id="skills">
     <h2>Skills</h2>
-
-
     <div class="detail_02"></div>
 
     <div id="skills_badges">
       <img alt="Static Badge" src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5&logoColor=white" height="40px" class="badges">
       <img alt="Static Badge" src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white" height="40px" class="badges">
       <img alt="Static Badge" src="https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=Javascript&logoColor=white" height="40px" class="badges">
-      <img alt="Static Badge" src="https://img.shields.io/badge/Mysql-%2326557C?style=for-the-badge&logo=mysql&logoColor=white" height="40px" class="badges">
+      <img alt="Static Badge" src="https://img.shields.io/badge/POSTGRESQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" height="40px" class="badges">
       <img alt="Static Badge" src="https://img.shields.io/badge/GIT-%23F05032?style=for-the-badge&logo=git&logoColor=white" height="40px" class="badges">
+      <img alt="Static Badge" src="https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=sass&logoColor=%23fff" height="40px" class="badges">
     </div>
 
 
@@ -89,18 +92,74 @@
 
 
   </section>
-  <section class="feed" id="projetos"">
+  <section class="feed" id="projetos">
     <h2>Projetos</h2>
-    <div class=" detail_02">
+    <div class=" detail_02"></div>
+
+
+
+
+
+
+    <div class="container_projetos">
+
+      <div class="card_projetos">
+
+        <img src="" alt="" class="card_img">
+
+        <div class="card_descri">
+          <h3>Titulo do projeto</h3>
+          <p>Feito com....</p>
+          <a href="#">Veja mais</a>
+        </div>
+
+      </div>
+
+
+
+      <div class="card_projetos">
+
+        <img src="" alt="">
+
+        <div class="card_descri">
+          <h3>Titulo do projeto</h3>
+          <p>Feito com....</p>
+          <a href="#">Veja mais</a>
+        </div>
+
+      </div>
+
+
+      <div class="card_projetos">
+
+        <img src="" alt="">
+
+        <div class="card_descri">
+          <h3>Titulo do projeto</h3>
+          <p>Feito com....</p>
+          <a href="#">Veja mais</a>
+        </div>
+      </div>
+      <!-- <div class="card_projetos">04</div> -->
+
     </div>
+
+
+      
+
+
+
+
+
+
 
   </section>
 
-  <section class="feed" id="contato">
+  <!-- <section class="feed" id="contato">
     <h2>Contatos</h2>
     <div class="detail_02"></div>
 
-  </section>
+  </section> -->
   <footer>
     <div id="rodape">
       <p>Desenvolvido por Mateus F. Oliveira | <span style="color: #8234E9;">2024</span>
