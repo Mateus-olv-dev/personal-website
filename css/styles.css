@@ -191,6 +191,7 @@ html ::-webkit-scrollbar-track {
   border-radius: 50%;
   border: #8234E9 solid 1.5px;
   margin: 150px 50px 50px 150px;
+  background-color: #1A2029;
 }
 
 #perfil {
@@ -337,16 +338,18 @@ html ::-webkit-scrollbar-track {
 }
 
 .container_projetos {
-  margin-top: 40px;
+  margin: 40px auto 0px auto;
   margin-bottom: 200px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card_projetos {
   padding: 20px;
   text-align: center;
+  width: 300px;
   height: 40vh;
   border-radius: 20px;
   box-shadow: #141414 5px 5px 10px;
@@ -363,7 +366,8 @@ html ::-webkit-scrollbar-track {
   position: absolute;
   bottom: -75px;
   background-color: #8234E9;
-  width: 270px;
+  margin: 0 15%;
+  height: 60%;
   border-radius: 20px;
   padding: 20px;
   opacity: 0;
