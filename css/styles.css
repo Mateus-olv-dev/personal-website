@@ -76,6 +76,7 @@ html {
 
 body {
   background-color: #272727;
+  overflow-x: hidden;
 }
 
 /* Estilo da barra de rolagem inteira */
@@ -119,18 +120,18 @@ html ::-webkit-scrollbar-track {
   margin-left: 10px;
 }
 
-.menu {
+nav {
   padding: 10px 0;
 }
 
-.menu ul {
+.nav-list {
   list-style: none;
   display: flex;
   justify-content: center;
   margin-right: 70px;
 }
 
-.menu li {
+.nav-list li {
   margin-right: 20px;
 }
 
@@ -176,6 +177,59 @@ html ::-webkit-scrollbar-track {
   background-color: #1A2029;
 }
 
+.mobile-menu-icon {
+  display: none;
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: absolute;
+  right: 0px;
+  top: 4rem;
+  background-color: #0E1116;
+  padding: 30px;
+  height: 30vh;
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: 10px 5px 15px #0B0E12;
+  display: none;
+}
+
+.nav-list-mobile {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-list-mobile li a {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 750px) {
+  .texto_cabecalho {
+    margin-left: 80px;
+  }
+  .menu ul {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+  }
+  .texto_cabecalho {
+    font-size: 25px;
+    margin-left: 50px;
+  }
+}
 #banner {
   background-color: #0E1116;
   height: 87vh;
@@ -330,6 +384,8 @@ html ::-webkit-scrollbar-track {
 #skills_badges {
   margin-top: 30px;
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -342,19 +398,18 @@ html ::-webkit-scrollbar-track {
   margin-bottom: 200px;
   display: flex;
   gap: 50px;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .card_projetos {
   padding: 20px;
   text-align: center;
-  width: 300px;
+  width: 23vw;
   height: 40vh;
   border-radius: 20px;
   box-shadow: #141414 5px 5px 10px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
