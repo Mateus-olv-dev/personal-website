@@ -99,7 +99,7 @@ html ::-webkit-scrollbar-track {
 
 #cabecalho {
   background-color: #0E1116;
-  height: 12vh;
+  height: 10vh;
   width: 100%;
   position: fixed;
   box-shadow: 10px 5px 15px #0B0E12;
@@ -211,14 +211,6 @@ nav {
 }
 
 @media (max-width: 750px) {
-  .texto_cabecalho {
-    margin-left: 80px;
-  }
-  .menu ul {
-    margin-right: 20px;
-  }
-}
-@media (max-width: 650px) {
   .mobile-menu-icon {
     display: block;
   }
@@ -285,6 +277,11 @@ nav {
   height: 60px;
 }
 
+.esferas {
+  display: flex;
+  gap: 10px;
+}
+
 .esfera {
   width: 60px;
   height: 60px;
@@ -321,14 +318,14 @@ nav {
 .email {
   color: #f6fbff;
   font-size: 20px;
-  margin-left: 60px;
+  margin: auto;
   text-align: center;
   font-weight: 500;
 }
 
 .email_after {
   color: #f6fbff;
-  margin-left: 28px;
+  margin: auto;
   font-size: 20px;
   font-weight: 500;
 }
@@ -359,6 +356,66 @@ nav {
   opacity: 80%;
 }
 
+@media (max-width: 1350px) {
+  .nome_banner {
+    font-size: 60px;
+  }
+  .subtitulos_banner {
+    font-size: 20px;
+  }
+}
+@media (max-width: 750px) {
+  #banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  .foto {
+    margin: 60px 0px 30px 0px;
+    width: 300px;
+    height: 300px;
+    padding: 0px 0px 0px 0px;
+  }
+  #perfil {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    align-items: center;
+  }
+  .nome_banner {
+    font-size: 40px;
+    text-align: center;
+  }
+  .subtitulos_banner {
+    font-size: 15px;
+  }
+  #container_sociais {
+    flex-direction: column-reverse;
+    gap: 25px;
+    margin: 20px 0px 0px 0px;
+  }
+  .email_box {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    width: 70vw;
+    height: 50px;
+  }
+  .email {
+    font-size: 16px;
+    margin: auto;
+  }
+  .email_after {
+    font-size: 16px;
+    margin: auto;
+  }
+  .copy_button {
+    height: 50px;
+  }
+  .esfera {
+    width: 40px;
+    height: 40px;
+  }
+}
 .feed {
   margin: 80px 150px 30px 150px;
   font-size: 35px;
@@ -375,6 +432,15 @@ nav {
   box-shadow: #141414 5px 5px 10px;
 }
 
+@media (max-width: 750px) {
+  .feed {
+    margin: 40px 0px 0px 20px;
+    font-size: 25px;
+  }
+  .detail_02 {
+    width: 25vw;
+  }
+}
 #skills {
   display: flex;
   flex-direction: column;
@@ -393,6 +459,11 @@ nav {
   box-shadow: #141414 5px 5px 10px;
 }
 
+@media (max-width: 750px) {
+  .badges {
+    height: 20px;
+  }
+}
 .container_projetos {
   margin: 40px auto 0px auto;
   margin-bottom: 200px;

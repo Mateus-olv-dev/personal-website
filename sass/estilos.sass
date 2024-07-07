@@ -36,7 +36,7 @@ html ::-webkit-scrollbar-track
 
 #cabecalho
   background-color: variaveis.$cor-secundaria
-  height: 12vh
+  height: 10vh
   width: 100%
   position: fixed
   box-shadow: 10px 5px 15px #0B0E12
@@ -139,11 +139,13 @@ nav
 .nav-list-mobile li a 
   font-size: 0.8rem
 
-@media (max-width: 750px)
-  .texto_cabecalho 
-    margin-left: 80px
-  .menu ul
-    margin-right: 20px
+// @media (max-width: 750px)
+//   #cabecalho
+//     height: 8vh
+//   .texto_cabecalho 
+//     margin-left: 80px
+//   .menu ul
+//     margin-right: 20px
 
 // @media (max-width: 600px)
 //   #cabecalho
@@ -158,7 +160,7 @@ nav
 //     width: 18px
 //     height: 18px
 
-@media (max-width: 650px)
+@media (max-width: 750px)
   .mobile-menu-icon
     display: block
   // .mobile-menu
@@ -228,6 +230,9 @@ nav
   width: 60px
   height: 60px
 
+.esferas
+  display: flex
+  gap: 10px
 
 .esfera 
   width: 60px
@@ -265,13 +270,13 @@ nav
 .email 
   color: variaveis.$text-color
   font-size: 20px
-  margin-left: 60px
+  margin: auto 
   text-align: center
   font-weight: 500
 
 .email_after 
   color: variaveis.$text-color
-  margin-left: 28px
+  margin: auto
   font-size: 20px
   font-weight: 500
 
@@ -301,14 +306,62 @@ nav
 
 
 
+@media (max-width: 1350px)
+  .nome_banner
+    font-size: 60px
+  .subtitulos_banner 
+    font-size: 20px
 
+@media (max-width: 750px)
+  #banner
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 70vh
+  .foto 
+    margin: 60px 0px 30px 0px 
+    width: 300px
+    height: 300px
+    padding: 0px 0px 0px 0px
+
+  #perfil
+    margin: 0px 0px 0px 0px
+    padding: 0px 0px 0px 0px
+    align-items: center
+  .nome_banner
+    font-size: 40px
+    text-align: center
+  .subtitulos_banner 
+    font-size: 15px
+  #container_sociais
+    flex-direction: column-reverse
+    gap: 25px
+    margin: 20px 0px 0px 0px
+  .email_box 
+    padding: 0px 0px
+    margin: 0px 0px
+    width: 70vw
+    height: 50px
+  .email 
+    font-size: 16px
+    margin: auto
+  .email_after 
+    font-size: 16px
+    margin: auto
+  .copy_button 
+    height: 50px
+  .esfera
+    width: 40px
+    height: 40px
+
+
+
+// fim
 .feed
   margin: 80px 150px 30px 150px
   font-size: 35px
   color: variaveis.$text-color
   text-shadow: #141414 3px 3px 15px
- 
-
 .detail_02 
   background: linear-gradient(to right, variaveis.$roxo-escuro, variaveis.$roxo-claro)
   height: 0.5vh
@@ -317,11 +370,16 @@ nav
   border-radius: 15px
   box-shadow: #141414 5px 5px 10px
 
+@media (max-width: 750px)
+  .feed 
+    margin: 40px 0px 0px 20px
+    font-size: 25px
+  .detail_02
+    width: 25vw
 #skills
   display: flex
   flex-direction: column
   justify-content: center
-
 
 #skills_badges 
   margin-top: 30px 
@@ -333,6 +391,9 @@ nav
 .badges 
   box-shadow: #141414 5px 5px 10px
 
+@media (max-width: 750px)
+  .badges
+    height: 20px
 
 // #projetos
 
