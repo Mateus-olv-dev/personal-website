@@ -46,6 +46,7 @@ html ::-webkit-scrollbar-track
 
 .logo
   margin-left: 230px
+  height: 35px
 
 
 nav 
@@ -404,6 +405,14 @@ nav
   opacity: 1
   // transform: translateY(0)
 
+
+
+footer 
+  position: relative
+#voltar 
+  position: absolute
+  right: 3%
+  bottom: 105%
 #rodape 
   background-color: variaveis.$cor-secundaria
   height: 12vh
@@ -415,3 +424,7 @@ nav
   display: flex
   justify-content: center
   align-items: center
+
+@media (max-width: 750px)
+  #voltar
+    height: 25px
