@@ -107,16 +107,8 @@ html ::-webkit-scrollbar-track {
   justify-content: space-between;
 }
 
-.texto_cabecalho {
-  color: #f6fbff;
-  margin-left: 150px;
-  font-size: 30px;
-}
-
-.span_texto_cabecalho {
-  color: #8234E9;
-  font-size: 40px;
-  margin-left: 10px;
+.logo {
+  margin-left: 230px;
 }
 
 nav {
@@ -166,16 +158,6 @@ nav {
   transition: 0.3s;
 }
 
-.button_home {
-  padding: 15px 10px 5px 10px;
-  border-radius: 10px;
-}
-
-.button_home:hover {
-  transition: 0.3s;
-  background-color: #1A2029;
-}
-
 .mobile-menu-icon {
   display: none;
   margin-right: 20px;
@@ -189,8 +171,7 @@ nav {
   right: 0px;
   top: 4rem;
   background-color: #0E1116;
-  padding: 30px;
-  height: 30vh;
+  padding: 40px;
   border-radius: 20px 0px 0px 20px;
   box-shadow: 10px 5px 15px #0B0E12;
   display: none;
@@ -219,8 +200,7 @@ nav {
   .nav-list {
     display: none;
   }
-  .texto_cabecalho {
-    font-size: 25px;
+  .logo {
     margin-left: 50px;
   }
 }
@@ -470,7 +450,7 @@ nav {
 
 @media (max-width: 750px) {
   .badges {
-    height: 20px;
+    height: 25px;
   }
 }
 .container_projetos {
