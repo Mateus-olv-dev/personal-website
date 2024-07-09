@@ -1,0 +1,434 @@
+@use 'variaveis'
+@use 'animacoes'
+@use '../components/_projetos/_projetos.sass'
+
+
+
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: "Teachers"
+
+html
+  scroll-behavior: smooth
+
+
+body 
+  background-color: variaveis.$body-color
+  overflow-x: hidden
+//
+
+/* Estilo da barra de rolagem inteira */
+html ::-webkit-scrollbar 
+  width: 5px //Definindo a largura da scrollbar 
+
+
+/* Estilo do polegar (a parte que você arrasta) */
+html ::-webkit-scrollbar-thumb 
+  background: linear-gradient(to left, variaveis.$roxo-escuro, variaveis.$roxo-claro)
+  border-radius: 20px
+  border: 5px solid variaveis.$roxo-escuro //Adicionando uma borda ao polegar 
+
+
+/* Adicional: Estilo do track (fundo da scrollbar) */
+html ::-webkit-scrollbar-track 
+  background: variaveis.$cor-secundaria // Cor de fundo da track 
+  border-radius: 20px  //Bordas arredondadas para o track 
+
+
+#cabecalho
+  background-color: variaveis.$cor-secundaria
+  height: 10vh
+  width: 100%
+  // position: fixed
+  box-shadow: 10px 5px 15px #0B0E12
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.logo
+  margin-left: 230px
+  height: 35px
+
+
+nav 
+  padding: 10px 0
+
+.nav-list
+  list-style: none
+  display: flex
+  justify-content: center
+  margin-right: 70px
+
+.nav-list li
+  margin-right: 20px
+
+.navegation
+  font-size: 18px
+  letter-spacing: 0.5px
+  text-decoration: none
+  color: variaveis.$text-color
+  font-weight: 600
+  padding: 8px
+  border-radius: 10px
+
+.navegation:hover 
+  // background-color: #3E3E40
+  background-color:  #1A2029
+  transition: 0.3s
+
+.navegation_projetos
+  background-color: variaveis.$roxo-claro
+  font-size: 18px
+  letter-spacing: 0.5px
+  text-decoration: none
+  color: variaveis.$text-color
+  font-weight: 600
+  padding: 8px  
+  border-radius: 10px
+  border: variaveis.$roxo-claro solid 1.5px
+
+
+.navegation_projetos:hover 
+  background-color: variaveis.$roxo-escuro
+  transition: 0.3s
+
+
+.mobile-menu-icon
+  display: none
+  margin-right: 20px
+  background-color: transparent
+  border: none
+  cursor: pointer
+    
+.mobile-menu
+  position: absolute
+  right: 0px
+  top: 4rem
+  background-color: variaveis.$cor-secundaria
+  padding: 40px
+  border-radius: 20px 0px 0px 20px
+  box-shadow: 10px 5px 15px #0B0E12
+  display: none
+.nav-list-mobile
+  list-style: none
+  display: flex
+  justify-content: space-between
+  align-items: center
+  // margin-right: 70px
+  flex-direction: column
+  gap: 20px
+.nav-list-mobile li a 
+  font-size: 0.8rem
+
+@media (max-width: 750px)
+  #cabecalho
+    height: 8vh
+  .mobile-menu-icon
+    display: block
+  // .mobile-menu
+  //   display: block
+  .nav-list
+    display: none
+  .logo
+    margin-left: 20px
+
+
+
+
+
+
+
+
+
+
+#banner
+  background-color: variaveis.$cor-secundaria
+  height: 87vh
+  box-shadow: 10px 5px 15px variaveis.$cor-secundaria
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.foto 
+  width: 300px
+  height: 300px
+  border-radius: 50%
+  border: variaveis.$roxo-claro solid 1.5px
+  margin: 100px 50px 50px 150px
+  background-color: #1A2029
+
+
+#perfil
+  display: flex
+  flex-direction: column
+  padding-right: 200px
+  align-items: flex-start
+  margin:120px 0px 15px 0px 
+
+.nome_banner 
+  color: variaveis.$text-color
+  font-size: 80px
+
+
+.subtitulos_banner 
+  color: variaveis.$text-color
+  line-height: 40px
+
+
+.detail_sub 
+  background: linear-gradient(to left, variaveis.$roxo-escuro, variaveis.$roxo-claro)
+  padding: 2px
+
+#container_sociais
+  display: flex
+  gap: 28px
+  margin: 60px 0px 0px 0px
+  align-items: center
+  text-decoration: none
+
+#container_sociais a 
+  border-radius: 50%
+  width: 60px
+  height: 60px
+
+.esferas
+  display: flex
+  gap: 10px
+
+.esfera 
+  width: 60px
+  height: 60px
+  background-color: variaveis.$roxo-claro
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+.esfera a 
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+.esfera:hover 
+  animation: girar2 0.5s normal
+  background-color: variaveis.$roxo-escuro
+  transition: 0.5s
+
+
+
+.email_box 
+  background-color: #1A2029
+  width: 30vw
+  height: 60px
+  border: variaveis.$roxo-escuro solid 1px
+  border-radius: 20px 
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.email 
+  color: variaveis.$text-color
+  font-size: 20px
+  margin: auto 
+  text-align: center
+  font-weight: 500
+
+.email_after 
+  color: variaveis.$text-color
+  margin: auto
+  font-size: 20px
+  font-weight: 500
+
+
+.copy_button 
+  background-color: variaveis.$roxo-claro
+  height: 60px
+  width: 60px
+  border-radius: 0px 20px 20px 0px
+  display: flex
+  justify-content: center
+  align-items: center
+  border: none
+  cursor: pointer
+
+.copy_button:hover 
+  background-color: variaveis.$roxo-escuro
+  transition: 0.2s
+
+.copy_button:active 
+  background-color: variaveis.$roxo-claro
+
+
+.email_box:hover 
+  animation: girar2 0.3s normal
+  opacity: 80%
+
+
+
+@media (max-width: 1350px)
+  .nome_banner
+    font-size: 60px
+  .subtitulos_banner 
+    font-size: 20px
+
+@media (max-width: 750px)
+  #banner
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 85vh
+  .foto 
+    margin: 2rem 0px 30px 0px 
+    width: 300px
+    height: 300px
+    padding: 0px 0px 0px 0px
+
+  #perfil
+    margin: 0px 0px 0px 0px
+    padding: 0px 0px 0px 0px
+    align-items: center
+  .nome_banner
+    font-size: 40px
+    text-align: center
+  .subtitulos_banner 
+    font-size: 15px
+    text-align: center
+  #container_sociais
+    flex-direction: column-reverse
+    gap: 25px
+    margin: 20px 0px 0px 0px
+  .email_box 
+    padding: 0px 0px
+    margin: 0px 0px
+    width: 70vw
+    height: 50px
+  .email 
+    font-size: 16px
+    margin: auto
+  .email_after 
+    font-size: 14.5px
+    margin: auto
+  .copy_button 
+    height: 50px
+  .esfera
+    width: 40px
+    height: 40px
+
+@media (max-width: 450px)
+  .subtitulos_banner
+    font-size: 13.5px
+    text-align: center
+
+// fim
+.feed
+  margin: 80px 150px 30px 150px
+  font-size: 35px
+  color: variaveis.$text-color
+  text-shadow: #141414 3px 3px 15px
+.detail_02 
+  background: linear-gradient(to right, variaveis.$roxo-escuro, variaveis.$roxo-claro)
+  height: 0.5vh
+  width: 20vh
+  margin-top: 5px
+  border-radius: 15px
+  box-shadow: #141414 5px 5px 10px
+
+@media (max-width: 750px)
+  .feed 
+    margin: 40px 0px 0px 20px
+    font-size: 25px
+  .detail_02
+    width: 25vw
+#skills
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+#skills_badges 
+  margin-top: 30px 
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  gap: 10px
+
+.badges 
+  box-shadow: #141414 5px 5px 10px
+
+@media (max-width: 750px)
+  .badges
+    height: 25px
+
+// #projetos
+
+.container_projetos
+  margin: 40px auto 0px auto 
+  margin-bottom: 200px
+  display: flex
+  gap: 50px
+  justify-content: flex-start
+  flex-wrap: wrap
+  
+.card_projetos
+  padding: 20px
+  text-align: center
+  width: 23vw
+  height: 40vh
+  border-radius: 20px
+  box-shadow: #141414 5px 5px 10px
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+
+.card_descri
+  font-size: 20px
+  color: variaveis.$text-color
+  position: absolute
+  bottom: -75px
+  background-color: variaveis.$roxo-claro
+  margin: 0 15%
+  height: 60%
+  // max-width: 200px
+  // min-width: 150px
+  border-radius: 20px
+  padding: 20px
+  opacity: 0
+  transition: opacity 0.5s, transform 0.5s
+
+.card_projetos:hover
+  // animation: shadow-drop-center 0.5s 
+  box-shadow: 0px 0px 20px 15px variaveis.$roxo-escuro 
+
+.card_projetos:hover .card_descri
+  animation: slide-top 0.5s both
+  opacity: 1
+  // transform: translateY(0)
+
+
+
+footer 
+  position: relative
+#voltar 
+  position: absolute
+  right: 3%
+  bottom: 105%
+#rodape 
+  background-color: variaveis.$cor-secundaria
+  height: 12vh
+  width: 100%
+  text-align: center
+  font-size: 18px
+  color: #C0CAAD
+  font-weight: 100
+  display: flex
+  justify-content: center
+  align-items: center
+
+@media (max-width: 750px)
+  #voltar a img
+    height: 25px
