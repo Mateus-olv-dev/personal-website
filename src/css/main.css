@@ -97,6 +97,20 @@
     -webkit-transform-origin-transform-origin: 0% 0%;
   }
 }
+@keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.5);
+    -webkit-transform-transform: scale(0.5);
+    -webkit-transform-origin: 100% 0%;
+    -webkit-transform-origin-transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -webkit-transform-transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    -webkit-transform-origin-transform-origin: 100% 0%;
+  }
+}
 .container_projetos {
   display: flex;
   gap: 30px;
@@ -163,6 +177,7 @@
   }
   .card_projeto {
     width: 80%;
+    height: 70vh;
   }
 }
 * {
@@ -278,6 +293,7 @@ nav {
   border-radius: 20px 0px 0px 20px;
   box-shadow: 10px 5px 15px #0B0E12;
   display: none;
+  animation: scale-up-tr 0.3s forwards;
 }
 
 .nav-list-mobile {
