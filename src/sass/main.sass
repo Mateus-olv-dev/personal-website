@@ -22,23 +22,35 @@ body
   overflow-x: hidden
 //
 
-/* Estilo da barra de rolagem inteira */
 html ::-webkit-scrollbar 
-  width: 5px //Definindo a largura da scrollbar 
+  width: 5px 
 
-
-/* Estilo do polegar (a parte que você arrasta) */
 html ::-webkit-scrollbar-thumb 
   background: linear-gradient(to left, variaveis.$roxo-escuro, variaveis.$roxo-claro)
   border-radius: 20px
-  border: 5px solid variaveis.$roxo-escuro //Adicionando uma borda ao polegar 
+  border: 5px solid variaveis.$roxo-escuro 
 
-
-/* Adicional: Estilo do track (fundo da scrollbar) */
 html ::-webkit-scrollbar-track 
-  background: variaveis.$cor-secundaria // Cor de fundo da track 
-  border-radius: 20px  //Bordas arredondadas para o track 
+  background: variaveis.$cor-secundaria 
+  border-radius: 20px  
 
+
+@media (max-width: 768px) 
+    ::-webkit-scrollbar 
+        width: 4px
+    
+
+    ::-webkit-scrollbar-thumb 
+      background: linear-gradient(to left, variaveis.$roxo-escuro, variaveis.$roxo-claro)
+      border-radius: 10px
+      border: 2px solid variaveis.$roxo-escuro 
+
+    
+
+    ::-webkit-scrollbar-track 
+        background: variaveis.$cor-secundaria 
+        border-radius: 4px
+    
 
 #cabecalho
   background-color: variaveis.$cor-secundaria

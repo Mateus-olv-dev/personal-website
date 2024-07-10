@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @keyframes flip {
   0% {
     -webkit-transform: rotateY(0);
@@ -49,8 +48,8 @@
     -webkit-transform-transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-40px);
-    -webkit-transform-transform: translateY(-40px);
+    -webkit-transform: translateY(-30px);
+    -webkit-transform-transform: translateY(-30px);
   }
 }
 @keyframes shadow-drop-center {
@@ -118,7 +117,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 150px 0px 150px 0px;
+  margin: 100px 0px 150px 0px;
 }
 
 .card_projeto {
@@ -174,12 +173,22 @@
 @media (max-width: 750px) {
   .container_projetos {
     gap: 40px;
+    margin: 50px 0px 150px 0px;
   }
   .card_projeto {
-    width: 80%;
-    height: 70vh;
+    width: 88vw;
+    height: 65vh;
   }
 }
+.card_projeto img {
+  height: 100px;
+}
+
+.card_projeto h3 {
+  color: #f6fbff;
+  font-size: 32px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -196,24 +205,35 @@ body {
   overflow-x: hidden;
 }
 
-/* Estilo da barra de rolagem inteira */
 html ::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Estilo do polegar (a parte que você arrasta) */
 html ::-webkit-scrollbar-thumb {
   background: linear-gradient(to left, #361362, #8234E9);
   border-radius: 20px;
   border: 5px solid #361362;
 }
 
-/* Adicional: Estilo do track (fundo da scrollbar) */
 html ::-webkit-scrollbar-track {
   background: #0E1116;
   border-radius: 20px;
 }
 
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, #361362, #8234E9);
+    border-radius: 10px;
+    border: 2px solid #361362;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0E1116;
+    border-radius: 4px;
+  }
+}
 #cabecalho {
   background-color: #0E1116;
   height: 10vh;
