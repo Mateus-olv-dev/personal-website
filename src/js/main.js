@@ -1,7 +1,3 @@
-// import '../components/_projetos/_projetos'
-
-
-
 
 
 const copyButton = document.querySelector('.copy_button');
@@ -53,3 +49,48 @@ if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
 }
 });
 });
+
+
+// const slides = document.querySelectorAll('.slide');
+// const dots = document.querySelectorAll('.dot');
+// const vejaMaisLinks = ["https://github.com/seu-usuario/projeto1", "https://github.com/seu-usuario/projeto2", "https://github.com/seu-usuario/projeto3"];
+// const vejaMaisBotao = document.querySelector('.veja-mais');
+// let slideAtual = 0;
+
+// function mostrarSlide(n) {
+//     slides.forEach((slide, index) => {
+//         slide.style.display = 'none';
+//         dots[index].classList.remove('active');
+//     });
+//     slides[n].style.display = 'block';
+//     dots[n].classList.add('active');
+// }
+
+// function atualizarLinkVejaMais() {
+//     vejaMaisBotao.setAttribute('href', vejaMaisLinks[slideAtual]);
+// }
+
+// function avancarSlide() {
+//     slideAtual++;
+//     if (slideAtual >= slides.length) {
+//         slideAtual = 0;
+//     }
+//     mostrarSlide(slideAtual);
+//     atualizarLinkVejaMais();
+// }
+
+// function retrocederSlide() {
+//     slideAtual--;
+//     if (slideAtual < 0) {
+//         slideAtual = slides.length - 1;
+//     }
+//     mostrarSlide(slideAtual);
+//     atualizarLinkVejaMais();
+// }
+
+// document.querySelector('.botao-avancar').addEventListener('click', avancarSlide);
+// document.querySelector('.botao-retroceder').addEventListener('click', retrocederSlide);
+
+// mostrarSlide(slideAtual);
+// atualizarLinkVejaMais();
+

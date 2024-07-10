@@ -1,0 +1,63 @@
+@use 'variaveis'
+@use 'animacoes'
+
+.container_projetos
+  display: flex
+  gap: 30px
+  width: 100%
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  margin: 150px 0px 150px 0px
+.card_projeto
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 80vh
+  width: 28vw
+  background-color: #1A2029
+  border-radius: 20px
+  box-shadow: 10px 5px 15px #0B0E12
+  // border: variaveis.$roxo-claro solid 1px
+  position: relative
+
+.card_projeto:hover
+  animation: slide-top 0.5s forwards
+.card_projeto:hover .linguagens_projeto
+  display: block
+  animation: scale-up-tl 0.5s normal
+.linguagens_projeto
+  display: none
+  position: absolute
+  background-color: #37136293
+  top: 2%
+  left: 5%
+  color: variaveis.$text-color
+  font-size: 1.2rem
+  letter-spacing: 2px
+  font-weight: 500
+  padding: 10px
+  border-radius: 0.8rem
+
+.code_projeto
+  display: none
+  position: absolute
+  background-color: #37136293
+  color: variaveis.$text-color
+  text-decoration: none
+  padding: 10px
+  border-radius: 0.8rem
+  font-size: 1rem
+  bottom: 5%
+  right: 10%
+  font-weight: 500
+  letter-spacing: 2px
+
+
+
+@media (max-width: 750px)
+  .container_projetos
+    gap: 40px
+  .card_projeto
+    width: 80%
+    
