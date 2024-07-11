@@ -1,8 +1,8 @@
 @use 'variaveis'
 @use 'animacoes'
 @use '_projetos'
-
-
+@use '_skills'
+@use '_mobile-menu'
 
 
 *
@@ -109,33 +109,6 @@ nav
   transition: 0.3s
 
 
-.mobile-menu-icon
-  display: none
-  margin-right: 20px
-  background-color: transparent
-  border: none
-  cursor: pointer
-  
-.mobile-menu
-  position: absolute
-  right: 0px
-  top: 4rem
-  background-color: variaveis.$cor-secundaria
-  padding: 40px
-  border-radius: 20px 0px 0px 20px
-  box-shadow: 10px 5px 15px #0B0E12
-  display: none
-  animation: scale-up-tr  0.3s forwards
-.nav-list-mobile
-  list-style: none
-  display: flex
-  justify-content: space-between
-  align-items: center
-  // margin-right: 70px
-  flex-direction: column
-  gap: 20px
-.nav-list-mobile li a 
-  font-size: 0.8rem
 
 @media (max-width: 750px)
   #cabecalho
@@ -361,21 +334,6 @@ nav
     font-size: 25px
   .detail_02
     width: 25vw
-#skills
-  display: flex
-  flex-direction: column
-  justify-content: center
-
-#skills_badges
-  margin-left: 6%
-  margin-top: 30px 
-  display: flex
-  justify-content: flex-start
-  flex-wrap: wrap
-  gap: 10px
-
-.badges 
-  box-shadow: #141414 5px 5px 10px
 
 @media (max-width: 750px)
   .badges

@@ -1,0 +1,79 @@
+@use 'variaveis'
+@use 'animacoes'
+
+.container_skills
+  background-color: #1A2029
+  width: 80vw
+  // height: 20vh
+  padding: 20px
+  box-shadow: 10px 5px 15px #0B0E12
+  border-radius: 30px
+  margin: 0 auto
+  display: flex
+  gap: 30px
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+.skill
+  background-color: variaveis.$cor-secundaria
+  display: flex
+  gap: 5px
+  align-items: center
+  height: 10vh
+  padding: 10px
+  padding-right: 20px
+  border-radius: 10px
+  box-shadow: 10px 5px 15px #0B0E12
+
+  // margin: 0 auto
+  
+
+.skill h3
+  color: variaveis.$text-color
+
+.skill:hover svg path
+  fill: #fff
+  transition: 0.5s
+
+.skill:hover
+  animation: girar2 0.5s normal
+#html:hover
+  background-color: #ec6231
+  transition: 0.5s
+
+#css:hover
+  background-color: #1572B6
+  transition: 0.5s
+
+#js:hover
+  background-color: #F7DF1E
+  transition: 0.5s
+
+#sass:hover
+  background-color: #CC6699
+  transition: 0.5s
+
+#mysql:hover
+  background-color: #4479A1
+  transition: 0.5s
+
+#git:hover
+  background-color: #F05032
+  transition: 0.5s
+
+@media (max-width: 750px)
+  .container_skills
+    width: 88vw
+    gap: 10px
+    // height: 15vh
+  .skill
+    height: 5vh
+    padding: 5px
+    box-shadow: 5px 3px 7px #0B0E12
+    gap: 0px
+
+  .skill svg
+    height: 20px
+  .skill h3
+    font-size: 12px
