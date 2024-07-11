@@ -23,11 +23,16 @@
 
 .card_projeto:hover
   animation: slide-top 0.5s forwards
+
 .card_projeto:hover .linguagens_projeto
   display: block
-  animation: scale-up-tl 0.5s normal
+
+.card_projeto:hover .ver_projeto 
+  display: block
+
 .card_projeto:hover .code_projeto
   display: block
+
 .linguagens_projeto
   display: none
   position: absolute
@@ -40,8 +45,21 @@
   font-weight: 500
   padding: 10px
   border-radius: 0.8rem
+  animation: scale-up-tl 0.5s normal
 
 .code_projeto
+  display: none
+  position: absolute
+  // text-decoration: none
+  bottom: 10%
+  left: 12%
+  text-decoration: none
+  color: variaveis.$text-color
+  font-size: 30px
+.code_projeto:hover
+  color: variaveis.$roxo-escuro
+  animation: girar2 0.4s normal
+.ver_projeto
   display: none
   position: absolute
   text-decoration: none

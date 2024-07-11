@@ -148,7 +148,10 @@
 
 .card_projeto:hover .linguagens_projeto {
   display: block;
-  animation: scale-up-tl 0.5s normal;
+}
+
+.card_projeto:hover .ver_projeto {
+  display: block;
 }
 
 .card_projeto:hover .code_projeto {
@@ -167,9 +170,25 @@
   font-weight: 500;
   padding: 10px;
   border-radius: 0.8rem;
+  animation: scale-up-tl 0.5s normal;
 }
 
 .code_projeto {
+  display: none;
+  position: absolute;
+  bottom: 10%;
+  left: 12%;
+  text-decoration: none;
+  color: #f6fbff;
+  font-size: 30px;
+}
+
+.code_projeto:hover {
+  color: #361362;
+  animation: girar2 0.4s normal;
+}
+
+.ver_projeto {
   display: none;
   position: absolute;
   text-decoration: none;
@@ -344,7 +363,7 @@ nav {
     display: none;
   }
   .logo {
-    height: 80px;
+    height: 90px;
     margin-left: 20px;
   }
 }
