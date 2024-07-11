@@ -26,6 +26,8 @@
 .card_projeto:hover .linguagens_projeto
   display: block
   animation: scale-up-tl 0.5s normal
+.card_projeto:hover .code_projeto
+  display: block
 .linguagens_projeto
   display: none
   position: absolute
@@ -42,16 +44,10 @@
 .code_projeto
   display: none
   position: absolute
-  background-color: #37136293
-  color: variaveis.$text-color
   text-decoration: none
-  padding: 10px
-  border-radius: 0.8rem
-  font-size: 1rem
   bottom: 5%
   right: 10%
-  font-weight: 500
-  letter-spacing: 2px
+  animation: slide-right 1s infinite
 
 
 
@@ -63,8 +59,6 @@
     width: 88vw
     height: 65vh
 
-.card_projeto img
-  height: 100px
 .card_projeto h3 
   color: variaveis.$text-color
   font-size: 32px
