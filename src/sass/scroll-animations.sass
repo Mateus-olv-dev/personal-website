@@ -1,0 +1,33 @@
+@keyframes slide-in-tl 
+  0% 
+    -webkit-transform: translateY(-1000px) translateX(-1000px)
+            transform: translateY(-1000px) translateX(-1000px)
+    opacity: 0
+  
+  100% 
+    -webkit-transform: translateY(0) translateX(0)
+            transform: translateY(0) translateX(0)
+    opacity: 1
+
+@keyframes slide-in-left 
+  0% 
+    -webkit-transform: translateX(-1000px)
+            transform: translateX(-1000px)
+    opacity: 0
+  
+  100% 
+    -webkit-transform: translateX(0)
+            transform: translateX(0)
+    opacity: 1
+  
+
+
+
+.hiddens
+  opacity: 0
+ 
+
+.show 
+  opacity: 1
+  animation: slide-in-left 1.5s cubic-bezier(0.87, 0, 0.13, 1) forwards
+
