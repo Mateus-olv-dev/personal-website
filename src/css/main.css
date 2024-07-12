@@ -120,6 +120,16 @@
     -webkit-transform-transform: translateX(20px);
   }
 }
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    -webkit-transform-transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -webkit-transform-transform: scale(1);
+  }
+}
 .container_projetos {
   display: flex;
   gap: 30px;
@@ -314,6 +324,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.menu-close, .menu-open {
+  animation: scale-up-center 0.5s normal;
 }
 
 .mobile-menu {

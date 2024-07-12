@@ -37,17 +37,28 @@ copyButton.addEventListener('click', () => {
     ;
 });
 
-document.addEventListener('DOMContentLoaded', () => {
 const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
 const mobileMenu = document.querySelector('.mobile-menu');
 
-mobileMenuIcon.addEventListener('click', () => {
-if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
-  mobileMenu.style.display = 'block';
-} else {
-  mobileMenu.style.display = 'none';
-}
-});
+document.addEventListener('DOMContentLoaded', () => {
+
+  const menuOpen = document.querySelector('.menu-open');
+  const menuClose = document.querySelector('.menu-close');
+
+  const toggleMenu = () => {
+    if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
+      mobileMenu.style.display = 'block';
+      menuOpen.style.display = 'none';
+      menuClose.style.display = 'block';
+    } else {
+      mobileMenu.style.display = 'none';
+      menuOpen.style.display = 'block';
+      menuClose.style.display = 'none';
+    }
+  };
+
+  mobileMenuIcon.addEventListener('click', toggleMenu);
+
 });
 
 
