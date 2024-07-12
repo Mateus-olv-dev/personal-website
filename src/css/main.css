@@ -488,7 +488,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 80px;
+  gap: 50px;
 }
 
 .foto {
@@ -590,6 +590,10 @@ nav {
   font-weight: 500;
 }
 
+.email, .email_after {
+  animation: scale-up-center 0.3s normal;
+}
+
 .copy_button {
   background-color: #8234E9;
   height: 60px;
@@ -616,6 +620,10 @@ nav {
   opacity: 80%;
 }
 
+.img_button1, .img_button2 {
+  animation: scale-up-center 0.3s normal;
+}
+
 @media (max-width: 1350px) {
   .nome_banner {
     font-size: 60px;
@@ -637,6 +645,7 @@ nav {
     width: 300px;
     height: 300px;
     padding: 0px 0px 0px 0px;
+    border-radius: 50%;
   }
   #perfil {
     margin: 0px 0px 0px 0px;
@@ -730,6 +739,10 @@ footer {
   justify-content: center;
   transition: 0.3s;
   opacity: 30%;
+}
+
+#voltar img {
+  animation: scale-up-center 0.5s normal;
 }
 
 #voltar:hover {
