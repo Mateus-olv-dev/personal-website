@@ -127,7 +127,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 100px 0px 150px 0px;
+  margin: 70px 0px 150px 0px;
 }
 
 .card_projeto {
@@ -181,11 +181,11 @@
   text-decoration: none;
   color: #f6fbff;
   font-size: 30px;
+  animation: girar2 2s infinite;
 }
 
 .code_projeto:hover {
   color: #361362;
-  animation: girar2 0.4s normal;
 }
 
 .ver_projeto {
@@ -267,7 +267,7 @@
 }
 
 #js:hover {
-  background-color: #F7DF1E;
+  background-color: #e2cc22;
   transition: 0.5s;
 }
 
@@ -305,6 +305,7 @@
   }
   .skill h3 {
     font-size: 12px;
+    letter-spacing: 1px;
   }
 }
 .mobile-menu-icon {
@@ -317,14 +318,14 @@
 
 .mobile-menu {
   position: absolute;
-  right: 0px;
-  top: 20%;
-  background-color: rgba(55, 19, 98, 0.4784313725);
+  top: 10%;
+  width: 100%;
+  background-color: rgba(55, 19, 98, 0.5882352941);
   padding: 10px;
-  border-radius: 20px 0px 0px 20px;
   box-shadow: 10px 5px 15px #0B0E12;
   display: none;
   animation: scale-up-tr 0.3s forwards;
+  justify-content: center;
 }
 
 .nav-list-mobile {
@@ -333,10 +334,15 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
-.nav-list-mobile a img {
-  height: 30px;
+.nav-list-mobile a {
+  text-decoration: none;
+  color: #f6fbff;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 * {
@@ -416,7 +422,7 @@ nav {
 
 .navegation {
   font-size: 18px;
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
   text-decoration: none;
   color: #f6fbff;
   font-weight: 600;
