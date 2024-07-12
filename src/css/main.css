@@ -218,7 +218,7 @@
   padding: 20px;
   box-shadow: 10px 5px 15px #0B0E12;
   border-radius: 30px;
-  margin: 0 auto;
+  margin: 70px auto;
   display: flex;
   gap: 30px;
   align-items: center;
@@ -236,6 +236,7 @@
   padding-right: 20px;
   border-radius: 10px;
   box-shadow: 10px 5px 15px #0B0E12;
+  cursor: pointer;
 }
 
 .skill h3 {
@@ -245,6 +246,10 @@
 .skill:hover svg path {
   fill: #fff;
   transition: 0.5s;
+}
+
+.skill svg {
+  margin: 0;
 }
 
 .skill:hover {
@@ -285,15 +290,18 @@
   .container_skills {
     width: 88vw;
     gap: 10px;
+    margin: 40px auto;
   }
   .skill {
     height: 5vh;
     padding: 5px;
     box-shadow: 5px 3px 7px #0B0E12;
-    gap: 0px;
+    gap: 8px;
+    padding-right: 5px;
   }
   .skill svg {
     height: 20px;
+    width: 20px;
   }
   .skill h3 {
     font-size: 12px;
@@ -679,11 +687,6 @@ nav {
   }
   .detail_02 {
     width: 25vw;
-  }
-}
-@media (max-width: 750px) {
-  .badges {
-    height: 25px;
   }
 }
 footer {
