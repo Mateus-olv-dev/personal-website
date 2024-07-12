@@ -309,10 +309,9 @@
 
 .mobile-menu {
   position: absolute;
-  height: 30vh;
   right: 0px;
-  top: 4rem;
-  background-color: #0E1116;
+  top: 20%;
+  background-color: rgba(55, 19, 98, 0.4784313725);
   padding: 10px;
   border-radius: 20px 0px 0px 20px;
   box-shadow: 10px 5px 15px #0B0E12;
@@ -323,14 +322,13 @@
 .nav-list-mobile {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 20px;
 }
 
-.nav-list-mobile li a {
-  font-size: 0.8rem;
+.nav-list-mobile a img {
+  height: 30px;
 }
 
 * {
