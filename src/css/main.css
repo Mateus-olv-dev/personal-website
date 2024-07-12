@@ -677,9 +677,10 @@ nav {
     align-items: center;
     height: 85vh;
     gap: 0px;
+    margin-top: 10%;
   }
   .foto {
-    margin: 2rem 0px 30px 0px;
+    margin: 5rem 0px 30px 0px;
     width: 300px;
     height: 300px;
     padding: 0px 0px 0px 0px;
