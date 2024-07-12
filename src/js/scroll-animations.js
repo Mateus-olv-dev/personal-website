@@ -1,17 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const elements = document.querySelectorAll('.hidden');
-  
-    const myObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if(entry.isIntersecting){
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target);  // Unobserve after animation starts
-        }
-      });
-    }, {
-      threshold: 0.1 // Element needs to be 10% visible
+  const elements = document.querySelectorAll('.hidden');
+  const headerHeight = document.querySelector('header').offsetHeight; // Altura do header fixo
+
+  function checkVisibility() {
+    elements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      const elementBottom = element.getBoundingClientRect().bottom;
+      const windowHeight = window.innerHeight;
+
+      // Verifica se o elemento está pelo menos 10% visível acima e abaixo
+      if ((elementTop - headerHeight <= windowHeight * 0.9) && (elementBottom >= -windowHeight * 0.9)) {
+        element.classList.add('show');
+      } else {
+        element.classList.remove('show');
+      }
     });
-  
-    elements.forEach((element) => myObserver.observe(element));
-  });
-  
+  }
+
+  // Chama a função inicialmente
+  checkVisibility();
+
+  // Adiciona um evento de scroll para verificar a visibilidade ao rolar a página
+  window.addEventListener('scroll', checkVisibility);
+});
