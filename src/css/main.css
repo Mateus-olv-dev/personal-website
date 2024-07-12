@@ -195,7 +195,7 @@
 }
 
 .code_projeto:hover {
-  color: #361362;
+  color: rgb(54, 19, 98);
 }
 
 .ver_projeto {
@@ -380,9 +380,9 @@ html ::-webkit-scrollbar {
 }
 
 html ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to left, #361362, #8234E9);
+  background: linear-gradient(to left, rgb(54, 19, 98), #8234E9);
   border-radius: 20px;
-  border: 5px solid #361362;
+  border: 5px solid rgb(54, 19, 98);
 }
 
 html ::-webkit-scrollbar-track {
@@ -395,9 +395,9 @@ html ::-webkit-scrollbar-track {
     width: 4px;
   }
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to left, #361362, #8234E9);
+    background: linear-gradient(to left, rgb(54, 19, 98), #8234E9);
     border-radius: 10px;
-    border: 2px solid #361362;
+    border: 2px solid rgb(54, 19, 98);
   }
   ::-webkit-scrollbar-track {
     background: #0E1116;
@@ -462,7 +462,7 @@ nav {
 }
 
 .navegation_projetos:hover {
-  background-color: #361362;
+  background-color: rgb(54, 19, 98);
   transition: 0.3s;
 }
 
@@ -487,7 +487,8 @@ nav {
   box-shadow: 10px 5px 15px #0E1116;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 80px;
 }
 
 .foto {
@@ -518,7 +519,7 @@ nav {
 }
 
 .detail_sub {
-  background: linear-gradient(to left, #361362, #8234E9);
+  background: linear-gradient(to left, rgb(54, 19, 98), #8234E9);
   padding: 2px;
 }
 
@@ -559,7 +560,7 @@ nav {
 
 .esfera:hover {
   animation: girar2 0.5s normal;
-  background-color: #361362;
+  background-color: rgb(54, 19, 98);
   transition: 0.5s;
 }
 
@@ -567,7 +568,7 @@ nav {
   background-color: #1A2029;
   width: 30vw;
   height: 60px;
-  border: #361362 solid 1px;
+  border: rgb(54, 19, 98) solid 1px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -602,7 +603,7 @@ nav {
 }
 
 .copy_button:hover {
-  background-color: #361362;
+  background-color: rgb(54, 19, 98);
   transition: 0.2s;
 }
 
@@ -629,6 +630,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 85vh;
+    gap: 0px;
   }
   .foto {
     margin: 2rem 0px 30px 0px;
@@ -693,7 +695,7 @@ nav {
 }
 
 .detail_02 {
-  background: linear-gradient(to right, #361362, #8234E9);
+  background: linear-gradient(to right, rgb(54, 19, 98), #8234E9);
   height: 0.5vh;
   width: 20vh;
   margin-top: 5px;
