@@ -56,11 +56,14 @@ html ::-webkit-scrollbar-track
   background-color: variaveis.$cor-secundaria
   height: 10vh
   width: 100%
-  // position: fixed
+  position: fixed
   box-shadow: 10px 5px 15px #0B0E12
   display: flex
   align-items: center
   justify-content: space-between
+  top: 0
+  z-index: 1000
+  pointer-events: none
 
 .logo
   margin-left: 230px
@@ -133,6 +136,7 @@ nav
 
 
 #banner
+  margin-top: 5%
   background-color: variaveis.$cor-secundaria
   height: 87vh
   box-shadow: 10px 5px 15px variaveis.$cor-secundaria

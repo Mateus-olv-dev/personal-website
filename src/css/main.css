@@ -441,10 +441,14 @@ html ::-webkit-scrollbar-track {
   background-color: #0E1116;
   height: 10vh;
   width: 100%;
+  position: fixed;
   box-shadow: 10px 5px 15px #0B0E12;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  top: 0;
+  z-index: 1000;
+  pointer-events: none;
 }
 
 .logo {
@@ -515,6 +519,7 @@ nav {
   }
 }
 #banner {
+  margin-top: 5%;
   background-color: #0E1116;
   height: 87vh;
   box-shadow: 10px 5px 15px #0E1116;

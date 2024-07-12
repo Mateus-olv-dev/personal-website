@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('.hidden');
   
-    const myObserver = new IntersectionObserver((entries, observer) => {
+    const myObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if(entry.isIntersecting){
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target);  // Unobserve after animation starts
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
         }
       });
     }, {
