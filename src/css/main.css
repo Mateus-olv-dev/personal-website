@@ -130,6 +130,93 @@
     -webkit-transform-transform: scale(1);
   }
 }
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    -webkit-transform-transform: scale(1);
+    -webkit-transform-origin: center center;
+    -webkit-transform-origin-transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-timing-function-animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    -webkit-transform-transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-timing-function-animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    -webkit-transform-transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-timing-function-animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    -webkit-transform-transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-timing-function-animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    -webkit-transform-transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-timing-function-animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-left {
+  0% {
+    -webkit-transform: translateX(-20px);
+    -webkit-transform-transform: translateX(-20px);
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-timing-function-animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateX(-16px);
+    -webkit-transform-transform: translateX(-16px);
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-timing-function-animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateX(-8px);
+    -webkit-transform-transform: translateX(-8px);
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-timing-function-animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateX(-3.5px);
+    -webkit-transform-transform: translateX(-3.5px);
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-timing-function-animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateX(-2px);
+    -webkit-transform-transform: translateX(-2px);
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-timing-function-animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87%, 98% {
+    -webkit-transform: translateX(0px);
+    -webkit-transform-transform: translateX(0px);
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-timing-function-animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    -webkit-transform-transform: translateX(0px);
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-timing-function-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+#projetos {
+  padding-top: 20px;
+}
+
 .container_projetos {
   display: flex;
   gap: 30px;
@@ -137,7 +224,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 70px 0px 150px 0px;
+  margin: 70px 0px 100px 0px;
 }
 
 .card_projeto {
@@ -186,12 +273,12 @@
 .code_projeto {
   display: none;
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 12%;
   text-decoration: none;
   color: #f6fbff;
-  font-size: 30px;
-  animation: girar2 2s infinite;
+  font-size: 35px;
+  animation: heartbeat 2s infinite;
 }
 
 .code_projeto:hover {
@@ -204,13 +291,14 @@
   text-decoration: none;
   bottom: 5%;
   right: 10%;
-  animation: slide-right 1s infinite;
+  animation: bounce-left 2s infinite;
+  height: 50px;
 }
 
 @media (max-width: 750px) {
   .container_projetos {
     gap: 40px;
-    margin: 50px 0px 150px 0px;
+    margin: 50px 0px 70px 0px;
   }
   .card_projeto {
     width: 88vw;
@@ -220,6 +308,10 @@
 .card_projeto h3 {
   color: #f6fbff;
   font-size: 32px;
+}
+
+#skills {
+  padding-top: 60px;
 }
 
 .container_skills {
@@ -251,6 +343,10 @@
 
 .skill h3 {
   color: #f6fbff;
+}
+
+.skill svg path {
+  fill: #8234E9;
 }
 
 .skill:hover svg path {
@@ -381,6 +477,38 @@
     opacity: 1;
   }
 }
+@keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+    -webkit-transform-origin-transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+    -webkit-filter-filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform-origin-transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    -webkit-filter-filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    -webkit-transform-transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -webkit-transform-transform: translateX(0);
+    opacity: 1;
+  }
+}
 .hidden {
   opacity: 0;
   transition: opacity 0.3s ease-out;
@@ -389,7 +517,7 @@
 
 .show {
   opacity: 1;
-  animation: slide-in-left 1.5s cubic-bezier(0.87, 0, 0.13, 1) forwards;
+  animation: fade-in-left 1.2s cubic-bezier(0.87, 0, 0.13, 1) forwards;
 }
 
 * {
@@ -452,7 +580,7 @@ html ::-webkit-scrollbar-track {
 
 .logo {
   margin-left: 230px;
-  height: 130px;
+  align-items: center;
 }
 
 nav {
@@ -464,10 +592,23 @@ nav {
   display: flex;
   justify-content: center;
   margin-right: 70px;
+  align-items: center;
+  gap: 20px;
 }
 
 .nav-list li {
-  margin-right: 20px;
+  animation: scale-up-center 0.5s normal;
+}
+
+.home {
+  height: 32px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.home:hover {
+  background-color: #1A2029;
+  transition: 0.3s;
 }
 
 .navegation {
@@ -513,12 +654,12 @@ nav {
     display: none;
   }
   .logo {
-    height: 90px;
+    height: 70px;
     margin-left: 20px;
   }
 }
 #banner {
-  margin-top: 5%;
+  margin-top: 10vh;
   background-color: #0E1116;
   height: 87vh;
   box-shadow: 10px 5px 15px #0E1116;
@@ -542,7 +683,7 @@ nav {
   flex-direction: column;
   padding-right: 200px;
   align-items: flex-start;
-  margin: 120px 0px 15px 0px;
+  margin: 120px 0px 0px 0px;
 }
 
 .nome_banner {
@@ -733,7 +874,7 @@ nav {
   }
 }
 .feed {
-  margin-top: 80px;
+  margin-top: 60px;
   margin-left: 5%;
   margin-bottom: 30px;
   font-size: 35px;

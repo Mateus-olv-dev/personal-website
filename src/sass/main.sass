@@ -51,7 +51,6 @@ html ::-webkit-scrollbar-track
         background: variaveis.$cor-secundaria 
         border-radius: 4px
     
-
 #cabecalho
   background-color: variaveis.$cor-secundaria
   height: 10vh
@@ -66,7 +65,7 @@ html ::-webkit-scrollbar-track
 
 .logo
   margin-left: 230px
-  height: 130px
+  align-items: center
 
 nav 
   padding: 10px 0
@@ -76,9 +75,18 @@ nav
   display: flex
   justify-content: center
   margin-right: 70px
-
+  align-items: center
+  gap: 20px
 .nav-list li
-  margin-right: 20px
+  animation: scale-up-center 0.5s normal
+
+.home
+  height: 32px
+  padding: 5px
+  border-radius: 5px
+.home:hover
+  background-color:  #1A2029
+  transition: 0.3s
 
 .navegation
   font-size: 18px
@@ -88,6 +96,7 @@ nav
   font-weight: 600
   padding: 8px
   border-radius: 10px
+
 
 .navegation:hover 
   // background-color: #3E3E40
@@ -112,6 +121,7 @@ nav
 
 
 
+
 @media (max-width: 750px)
   #cabecalho
     height: 8vh
@@ -122,20 +132,11 @@ nav
   .nav-list
     display: none
   .logo
-    height: 90px
+    height: 70px
     margin-left: 20px
 
-
-
-
-
-
-
-
-
-
 #banner
-  margin-top: 5%
+  margin-top: 10vh
   background-color: variaveis.$cor-secundaria
   height: 87vh
   box-shadow: 10px 5px 15px variaveis.$cor-secundaria
@@ -158,7 +159,7 @@ nav
   flex-direction: column
   padding-right: 200px
   align-items: flex-start
-  margin:120px 0px 15px 0px 
+  margin:120px 0px 0px 0px 
 
 .nome_banner 
   color: variaveis.$text-color
@@ -266,9 +267,6 @@ nav
 .img_button1 , .img_button2
   animation: scale-up-center 0.3s normal
 
-
-
-
 @media (max-width: 1350px)
   .nome_banner
     font-size: 60px
@@ -329,7 +327,7 @@ nav
 
 // fim
 .feed
-  margin-top: 80px
+  margin-top: 60px
   margin-left: 5%
   margin-bottom: 30px
   font-size: 35px
@@ -349,13 +347,6 @@ nav
     font-size: 25px
   .detail_02
     width: 25vw
-
-
-
-
-
-
-
 
 footer 
   position: relative

@@ -1,6 +1,8 @@
 @use 'variaveis'
 @use 'animacoes'
 
+#projetos
+  padding-top: 20px
 .container_projetos
   display: flex
   gap: 30px
@@ -8,7 +10,7 @@
   justify-content: center
   align-items: center
   flex-wrap: wrap
-  margin: 70px 0px 150px 0px
+  margin: 70px 0px 100px 0px
 .card_projeto
   display: flex
   justify-content: center
@@ -51,12 +53,12 @@
   display: none
   position: absolute
   // text-decoration: none
-  bottom: 10%
+  bottom: 5%
   left: 12%
   text-decoration: none
   color: variaveis.$text-color
-  font-size: 30px
-  animation: girar2 2s infinite
+  font-size: 35px
+  animation: heartbeat 2s infinite
 
 .code_projeto:hover
   color: variaveis.$roxo-escuro
@@ -66,14 +68,15 @@
   text-decoration: none
   bottom: 5%
   right: 10%
-  animation: slide-right 1s infinite
+  animation: bounce-left 2s infinite
+  height: 50px
 
 
 
 @media (max-width: 750px)
   .container_projetos
     gap: 40px
-    margin: 50px 0px 150px 0px
+    margin: 50px 0px 70px 0px
   .card_projeto
     width: 88vw
     height: 65vh
