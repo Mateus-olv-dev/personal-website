@@ -517,7 +517,7 @@
 
 .show {
   opacity: 1;
-  animation: fade-in-left 1.2s cubic-bezier(0.87, 0, 0.13, 1) forwards;
+  animation: fade-in-left 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 * {
