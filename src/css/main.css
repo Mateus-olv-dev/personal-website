@@ -596,7 +596,7 @@ nav {
   gap: 20px;
 }
 
-.nav-list li {
+.nav-list li a:focus {
   animation: scale-up-center 0.5s normal;
 }
 
