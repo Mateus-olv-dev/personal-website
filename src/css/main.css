@@ -442,6 +442,7 @@ nav {
   margin-top: 10vh;
   background-color: #0E1116;
   min-height: 75vh;
+  max-height: 600px;
   box-shadow: 10px 5px 15px #0E1116;
   display: flex;
   flex-direction: row;
@@ -651,16 +652,6 @@ nav {
     text-align: center;
   }
 }
-@media (min-width: 1500px) {
-  #banner {
-    max-height: 60vh;
-  }
-}
-@media (max-width: 1300px) {
-  #banner {
-    min-height: 80vh;
-  }
-}
 #skills {
   padding-top: 60px;
 }
@@ -668,6 +659,7 @@ nav {
 .container_skills {
   background-color: #1A2029;
   width: 80vw;
+  max-width: 1300px;
   padding: 20px;
   box-shadow: 10px 5px 15px #0B0E12;
   border-radius: 30px;
@@ -784,7 +776,9 @@ nav {
   justify-content: center;
   align-items: center;
   height: 80vh;
+  max-height: 700px;
   width: 28vw;
+  min-width: 400px;
   background-color: #1A2029;
   border-radius: 20px;
   box-shadow: 10px 5px 15px #0B0E12;
