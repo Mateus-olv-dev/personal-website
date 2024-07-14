@@ -28,8 +28,9 @@ nav
   align-items: center
   gap: 20px
 
-.nav-list li a:focus 
-  animation: scale-up-center 0.5s normal
+.nav-list li a 
+  display: inline-block
+  animation: scale-in-center 0.4s forwards
 
 .home
   height: 32px
@@ -73,15 +74,3 @@ nav
 
 
 
-@media (max-width: 750px)
-  #cabecalho
-    height: 8vh
-  .mobile-menu-icon
-    display: block
-  // .mobile-menu
-  //   display: block
-  .nav-list
-    display: none
-  .logo
-    height: 70px
-    margin-left: 20px

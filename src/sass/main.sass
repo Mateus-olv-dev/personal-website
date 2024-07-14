@@ -9,7 +9,7 @@
 @use '_home'
 @use '_skills'
 @use '_projetos'
-
+@use '_footer'
 
 *
   padding: 0
@@ -43,7 +43,23 @@ html ::-webkit-scrollbar-track
 
 
 
-// fim
+
+
+@media (max-width: 750px)
+  #cabecalho
+    height: 8vh
+  .mobile-menu-icon
+    display: block
+  // .mobile-menu
+  //   display: block
+  .nav-list
+    display: none
+  .logo
+    height: 70px
+    margin-left: 20px
+
+
+
 .feed
   margin-top: 60px
   margin-left: 5%
