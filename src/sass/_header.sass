@@ -1,0 +1,87 @@
+@use 'variaveis'
+@use 'animacoes'
+
+#cabecalho
+  background-color: variaveis.$cor-secundaria
+  height: 10vh
+  width: 100%
+  position: fixed
+  box-shadow: 10px 5px 15px #0B0E12
+  display: flex
+  align-items: center
+  justify-content: space-between
+  top: 0
+  z-index: 1000
+
+.logo
+  margin-left: 230px
+  align-items: center
+
+nav 
+  padding: 10px 0
+
+.nav-list
+  list-style: none
+  display: flex
+  justify-content: center
+  margin-right: 70px
+  align-items: center
+  gap: 20px
+
+.nav-list li a:focus 
+  animation: scale-up-center 0.5s normal
+
+.home
+  height: 32px
+  padding: 5px
+  border-radius: 5px
+.home:hover
+  background-color:  #1A2029
+  transition: 0.3s
+
+.navegation
+  font-size: 18px
+  letter-spacing: 2px
+  text-decoration: none
+  color: variaveis.$text-color
+  font-weight: 600
+  padding: 8px
+  border-radius: 10px
+
+
+.navegation:hover 
+  // background-color: #3E3E40
+  background-color:  #1A2029
+  transition: 0.3s
+
+.navegation_projetos
+  background-color: variaveis.$roxo-claro
+  font-size: 18px
+  letter-spacing: 0.5px
+  text-decoration: none
+  color: variaveis.$text-color
+  font-weight: 600
+  padding: 8px  
+  border-radius: 10px
+  border: variaveis.$roxo-claro solid 1.5px
+
+
+.navegation_projetos:hover 
+  background-color: variaveis.$roxo-escuro
+  transition: 0.3s
+
+
+
+
+@media (max-width: 750px)
+  #cabecalho
+    height: 8vh
+  .mobile-menu-icon
+    display: block
+  // .mobile-menu
+  //   display: block
+  .nav-list
+    display: none
+  .logo
+    height: 70px
+    margin-left: 20px
