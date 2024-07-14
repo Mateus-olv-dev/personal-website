@@ -6,51 +6,46 @@
 #banner
   margin-top: 10vh
   background-color: variaveis.$cor-secundaria
-  height: 87vh
+  min-height: 75vh // Altura mínima para telas menores
   box-shadow: 10px 5px 15px variaveis.$cor-secundaria
   display: flex
   flex-direction: row
   justify-content: center
-  gap: 50px
-
-.foto 
+  align-items: center
+.foto
   width: 300px
   height: 300px
   border-radius: 50%
   border: variaveis.$roxo-claro solid 1.5px
-  margin: 100px 50px 50px 150px
+  margin: 0px 50px 50px 0
   background-color: #1A2029
-
 
 #perfil
   display: flex
   flex-direction: column
-  padding-right: 200px
   align-items: flex-start
-  margin:120px 0px 0px 0px 
+  margin: 0px 0 0 0
 
-.nome_banner 
+.nome_banner
   color: variaveis.$text-color
   font-size: 80px
 
-
-.subtitulos_banner 
+.subtitulos_banner
   color: variaveis.$text-color
   line-height: 40px
 
-
-.detail_sub 
+.detail_sub
   background: linear-gradient(to left, variaveis.$roxo-escuro, variaveis.$roxo-claro)
   padding: 2px
 
 #container_sociais
   display: flex
   gap: 28px
-  margin: 60px 0px 0px 0px
+  margin: 60px 0 0 0
   align-items: center
   text-decoration: none
 
-#container_sociais a 
+#container_sociais a
   border-radius: 50%
   width: 60px
   height: 60px
@@ -59,7 +54,7 @@
   display: flex
   gap: 10px
 
-.esfera 
+.esfera
   width: 60px
   height: 60px
   background-color: variaveis.$roxo-claro
@@ -68,77 +63,71 @@
   align-items: center
   justify-content: center
 
-
-.esfera a 
+.esfera a
   display: flex
   align-items: center
   justify-content: center
 
-
-.esfera:hover 
+.esfera:hover
   animation: girar2 0.5s normal
   background-color: variaveis.$roxo-escuro
   transition: 0.5s
 
-
-
-.email_box 
+.email_box
   background-color: #1A2029
   width: 30vw
   height: 60px
   border: variaveis.$roxo-escuro solid 1px
-  border-radius: 20px 
+  border-radius: 20px
   display: flex
   align-items: center
   justify-content: space-between
 
-.email 
+.email
   color: variaveis.$text-color
   font-size: 20px
-  margin: auto 
+  margin: auto
   text-align: center
   font-weight: 500
 
-.email_after 
+.email_after
   color: variaveis.$text-color
   margin: auto
   font-size: 20px
   font-weight: 500
 
-.email , .email_after
+.email, .email_after
   animation: scale-up-center 0.3s normal
 
-
-.copy_button 
+.copy_button
   background-color: variaveis.$roxo-claro
   height: 60px
   width: 60px
-  border-radius: 0px 20px 20px 0px
+  border-radius: 0 20px 20px 0
   display: flex
   justify-content: center
   align-items: center
   border: none
   cursor: pointer
 
-.copy_button:hover 
+.copy_button:hover
   background-color: variaveis.$roxo-escuro
   transition: 0.2s
 
-.copy_button:active 
+.copy_button:active
   background-color: variaveis.$roxo-claro
 
-
-.email_box:hover 
+.email_box:hover
   animation: girar2 0.3s normal
   opacity: 80%
 
-.img_button1 , .img_button2
+.img_button1, .img_button2
   animation: scale-up-center 0.3s normal
 
 @media (max-width: 1350px)
   .nome_banner
     font-size: 60px
-  .subtitulos_banner 
+  .subtitulos_banner
     font-size: 20px
 
 @media (max-width: 750px)
@@ -147,42 +136,50 @@
     justify-content: center
     align-items: center
     height: 90vh
-    gap: 0px
+    gap: 0
     margin-top: 10%
 
-  .foto 
-    margin: 5rem 0px 30px 0px 
+  .foto
+    margin: 5rem 0 30px 0
     width: 300px
     height: 300px
-    padding: 0px 0px 0px 0px
-    border-radius: 50%
+    padding: 0
+
   #perfil
-    margin: 0px 0px 0px 0px
-    padding: 0px 0px 0px 0px
+    margin: 0
+    padding: 0
     align-items: center
+
   .nome_banner
     font-size: 40px
     text-align: center
-  .subtitulos_banner 
+
+  .subtitulos_banner
     font-size: 15px
     text-align: center
+
   #container_sociais
     flex-direction: column-reverse
     gap: 25px
-    margin: 20px 0px 0px 0px
-  .email_box 
-    padding: 0px 0px
-    margin: 0px 0px
+    margin: 20px 0 0 0
+
+  .email_box
+    padding: 0
+    margin: 0
     width: 70vw
     height: 50px
-  .email 
+
+  .email
     font-size: 16px
     margin: auto
-  .email_after 
+
+  .email_after
     font-size: 14.5px
     margin: auto
-  .copy_button 
+
+  .copy_button
     height: 50px
+
   .esfera
     width: 40px
     height: 40px
@@ -192,3 +189,11 @@
   .subtitulos_banner
     font-size: 13.5px
     text-align: center
+
+@media (min-width: 1500px)
+  #banner
+    max-height: 60vh
+
+@media (max-width: 1300px)
+  #banner
+    min-height: 80vh

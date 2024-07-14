@@ -441,12 +441,12 @@ nav {
 #banner {
   margin-top: 10vh;
   background-color: #0E1116;
-  height: 87vh;
+  min-height: 75vh;
   box-shadow: 10px 5px 15px #0E1116;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 50px;
+  align-items: center;
 }
 
 .foto {
@@ -454,16 +454,15 @@ nav {
   height: 300px;
   border-radius: 50%;
   border: #8234E9 solid 1.5px;
-  margin: 100px 50px 50px 150px;
+  margin: 0px 50px 50px 0;
   background-color: #1A2029;
 }
 
 #perfil {
   display: flex;
   flex-direction: column;
-  padding-right: 200px;
   align-items: flex-start;
-  margin: 120px 0px 0px 0px;
+  margin: 0px 0 0 0;
 }
 
 .nome_banner {
@@ -484,7 +483,7 @@ nav {
 #container_sociais {
   display: flex;
   gap: 28px;
-  margin: 60px 0px 0px 0px;
+  margin: 60px 0 0 0;
   align-items: center;
   text-decoration: none;
 }
@@ -556,7 +555,7 @@ nav {
   background-color: #8234E9;
   height: 60px;
   width: 60px;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0 20px 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -596,19 +595,18 @@ nav {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    gap: 0px;
+    gap: 0;
     margin-top: 10%;
   }
   .foto {
-    margin: 5rem 0px 30px 0px;
+    margin: 5rem 0 30px 0;
     width: 300px;
     height: 300px;
-    padding: 0px 0px 0px 0px;
-    border-radius: 50%;
+    padding: 0;
   }
   #perfil {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 0;
+    padding: 0;
     align-items: center;
   }
   .nome_banner {
@@ -622,11 +620,11 @@ nav {
   #container_sociais {
     flex-direction: column-reverse;
     gap: 25px;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0 0 0;
   }
   .email_box {
-    padding: 0px 0px;
-    margin: 0px 0px;
+    padding: 0;
+    margin: 0;
     width: 70vw;
     height: 50px;
   }
@@ -651,6 +649,16 @@ nav {
   .subtitulos_banner {
     font-size: 13.5px;
     text-align: center;
+  }
+}
+@media (min-width: 1500px) {
+  #banner {
+    max-height: 60vh;
+  }
+}
+@media (max-width: 1300px) {
+  #banner {
+    min-height: 80vh;
   }
 }
 #skills {
