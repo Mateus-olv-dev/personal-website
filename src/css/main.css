@@ -595,7 +595,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    min-height: 90vh;
     gap: 0;
     margin-top: 10%;
   }
