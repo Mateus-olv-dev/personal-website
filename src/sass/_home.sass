@@ -3,38 +3,34 @@
     
   
     
-#banner
-  margin-top: 10vh
-  background-color: variaveis.$cor-secundaria
-  min-height: 75vh
+#home
+  // background-color: variaveis.$cor-secundaria
+  // background: linear-gradient(to right, variaveis.$roxo-escuro , variaveis.$cor-secundaria 50%)
+  min-height: 100vh
   max-height: 600px
-  box-shadow: 10px 5px 15px variaveis.$cor-secundaria
+  // box-shadow: 10px 5px 15px variaveis.$cor-secundaria
   display: flex
-  flex-direction: row
-  justify-content: center
-  align-items: center
-
-.foto
-  width: 300px
-  height: 300px
-  border-radius: 50%
-  border: variaveis.$roxo-claro solid 1.5px
-  margin: 0px 50px 50px 0
-  background-color: #1A2029
+  flex-direction: column
+  justify-content: space-around
+  
 
 #perfil
   display: flex
   flex-direction: column
-  align-items: flex-start
-  margin: 0px 0 0 0
-
+  gap: 40px
+  margin: 100px 0 0 15vw
+  
 .nome_banner
   color: variaveis.$text-color
   font-size: 80px
+  font-weight: 400
 
 .subtitulos_banner
   color: variaveis.$text-color
-  line-height: 40px
+  line-height: 50px
+  font-weight: 400
+  letter-spacing: 1px
+
 
 .detail_sub
   background: linear-gradient(to left, variaveis.$roxo-escuro, variaveis.$roxo-claro)
@@ -43,51 +39,57 @@
 #container_sociais
   display: flex
   gap: 28px
-  margin: 60px 0 0 0
-  align-items: center
+  align-items: flex-end
   text-decoration: none
+  justify-content: flex-end
+  margin: 0 15vw 50px 0
+  flex-direction: column
 
-#container_sociais a
-  border-radius: 50%
-  width: 60px
-  height: 60px
-
-.esferas
+.sociais
   display: flex
+  gap: 22px
+
+
+.links_home
+  width: 14vw
+  height: 50px
+  border: 2px solid variaveis.$roxo-claro
+  border-radius: 15px
+  display: flex
+  align-items: center
+  justify-content: center
   gap: 10px
-
-.esfera
-  width: 60px
-  height: 60px
-  background-color: variaveis.$roxo-claro
-  border-radius: 50%
-  display: flex
-  align-items: center
-  justify-content: center
-
-.esfera a
-  display: flex
-  align-items: center
-  justify-content: center
-
-.esfera:hover
-  animation: girar2 0.5s normal
-  background-color: variaveis.$roxo-escuro
+  text-decoration: none
   transition: 0.5s
+
+
+.links_home:hover
+  background-color: variaveis.$roxo-claro
+  transition: 0.5s
+
+
+.links_home img
+  height: 38px
+ 
+
+.links_home p
+  color: variaveis.$text-color
+  font-weight: 500
+
 
 .email_box
   background-color: #1A2029
   width: 30vw
-  height: 60px
+  height: 50px
   border: variaveis.$roxo-escuro solid 1px
-  border-radius: 20px
+  border-radius: 15px
   display: flex
   align-items: center
   justify-content: space-between
 
 .email
   color: variaveis.$text-color
-  font-size: 20px
+  font-size: 16px
   margin: auto
   text-align: center
   font-weight: 500
@@ -95,7 +97,7 @@
 .email_after
   color: variaveis.$text-color
   margin: auto
-  font-size: 20px
+  font-size: 16px
   font-weight: 500
 
 .email, .email_after
@@ -103,9 +105,9 @@
 
 .copy_button
   background-color: variaveis.$roxo-claro
-  height: 60px
-  width: 60px
-  border-radius: 0 20px 20px 0
+  height: 50px
+  width: 50px
+  border-radius: 0 15px 15px 0
   display: flex
   justify-content: center
   align-items: center
@@ -133,13 +135,13 @@
     font-size: 20px
 
 @media (max-width: 750px)
-  #banner
+  #home
     flex-direction: column
     justify-content: center
     align-items: center
     min-height: 90vh
-    gap: 0
-    margin-top: 10%
+    gap: 30px
+    // margin-top: 10%
 
   .foto
     margin: 5rem 0 30px 0

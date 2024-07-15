@@ -324,13 +324,13 @@
   box-shadow: 10px 5px 15px #0B0E12;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   top: 0;
   z-index: 1000;
 }
 
 .logo {
-  margin-left: 230px;
+  margin-left: 70px;
   align-items: center;
 }
 
@@ -396,8 +396,7 @@ nav {
 }
 
 .mobile-menu-icon {
-  display: none;
-  margin-right: 20px;
+  margin-right: 5vw;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -410,7 +409,7 @@ nav {
 .mobile-menu {
   position: absolute;
   top: 8vh;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(55, 19, 98, 0.5882352941);
   padding: 10px;
   box-shadow: 10px 5px 15px #0B0E12;
@@ -438,42 +437,32 @@ nav {
   animation: scale-in-center 0.4s forwards;
 }
 
-#banner {
-  margin-top: 10vh;
-  background-color: #0E1116;
-  min-height: 75vh;
+#home {
+  min-height: 100vh;
   max-height: 600px;
-  box-shadow: 10px 5px 15px #0E1116;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.foto {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: #8234E9 solid 1.5px;
-  margin: 0px 50px 50px 0;
-  background-color: #1A2029;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #perfil {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 0px 0 0 0;
+  gap: 40px;
+  margin: 100px 0 0 15vw;
 }
 
 .nome_banner {
   color: #f6fbff;
   font-size: 80px;
+  font-weight: 400;
 }
 
 .subtitulos_banner {
   color: #f6fbff;
-  line-height: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .detail_sub {
@@ -484,50 +473,51 @@ nav {
 #container_sociais {
   display: flex;
   gap: 28px;
-  margin: 60px 0 0 0;
-  align-items: center;
+  align-items: flex-end;
   text-decoration: none;
+  justify-content: flex-end;
+  margin: 0 15vw 50px 0;
+  flex-direction: column;
 }
 
-#container_sociais a {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-}
-
-.esferas {
+.sociais {
   display: flex;
+  gap: 22px;
+}
+
+.links_home {
+  width: 14vw;
+  height: 50px;
+  border: 2px solid #8234E9;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
-}
-
-.esfera {
-  width: 60px;
-  height: 60px;
-  background-color: #8234E9;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.esfera a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.esfera:hover {
-  animation: girar2 0.5s normal;
-  background-color: rgb(54, 19, 98);
+  text-decoration: none;
   transition: 0.5s;
+}
+
+.links_home:hover {
+  background-color: #8234E9;
+  transition: 0.5s;
+}
+
+.links_home img {
+  height: 38px;
+}
+
+.links_home p {
+  color: #f6fbff;
+  font-weight: 500;
 }
 
 .email_box {
   background-color: #1A2029;
   width: 30vw;
-  height: 60px;
+  height: 50px;
   border: rgb(54, 19, 98) solid 1px;
-  border-radius: 20px;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -535,7 +525,7 @@ nav {
 
 .email {
   color: #f6fbff;
-  font-size: 20px;
+  font-size: 16px;
   margin: auto;
   text-align: center;
   font-weight: 500;
@@ -544,7 +534,7 @@ nav {
 .email_after {
   color: #f6fbff;
   margin: auto;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -554,9 +544,9 @@ nav {
 
 .copy_button {
   background-color: #8234E9;
-  height: 60px;
-  width: 60px;
-  border-radius: 0 20px 20px 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 0 15px 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -591,13 +581,12 @@ nav {
   }
 }
 @media (max-width: 750px) {
-  #banner {
+  #home {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 90vh;
-    gap: 0;
-    margin-top: 10%;
+    gap: 30px;
   }
   .foto {
     margin: 5rem 0 30px 0;
@@ -877,7 +866,7 @@ footer {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Teachers";
+  font-family: "Ubuntu";
 }
 
 html {
@@ -904,21 +893,6 @@ html ::-webkit-scrollbar-track {
   border-radius: 20px;
 }
 
-@media (max-width: 750px) {
-  #cabecalho {
-    height: 8vh;
-  }
-  .mobile-menu-icon {
-    display: block;
-  }
-  .nav-list {
-    display: none;
-  }
-  .logo {
-    height: 70px;
-    margin-left: 20px;
-  }
-}
 .feed {
   margin-top: 60px;
   margin-left: 5%;
