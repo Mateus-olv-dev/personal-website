@@ -586,7 +586,7 @@ nav {
     justify-content: center;
     align-items: center;
     min-height: 85vh;
-    gap: 100px;
+    gap: 120px;
   }
   #perfil {
     margin: 0;
@@ -603,7 +603,7 @@ nav {
   }
   #container_sociais {
     flex-direction: column-reverse;
-    gap: 25px;
+    gap: 40px;
     margin: 20px 0 0 0;
     justify-content: center;
   }
