@@ -7,11 +7,12 @@
   background-color: transparent
   border: none
   cursor: pointer
+  z-index: 100
 .menu-close , .menu-open
   animation: scale-up-center 0.5s normal
 .mobile-menu
   position: absolute
-  top: 8vh
+  // top: 8vh
   width: 30vw
   height: 100vh
   background-color: #1a2029da
@@ -29,6 +30,7 @@
   flex-direction: column
   gap: 20px
   justify-content: space-between
+  z-index: 1000
 .nav-list-mobile a 
   text-decoration: none
   color: variaveis.$text-color

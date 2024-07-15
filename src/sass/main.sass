@@ -108,7 +108,8 @@ $shadows-big:    multiple-box-shadow(100)
 
 
 
-// @media (max-width: 750px)
+
+
 //   #cabecalho
 //     height: 8vh
 //   .mobile-menu-icon
@@ -120,7 +121,7 @@ $shadows-big:    multiple-box-shadow(100)
 //   .logo
 //     height: 70px
 //     margin-left: 20px
-
+ 
 
 
 .feed
@@ -154,11 +155,34 @@ $shadows-big:    multiple-box-shadow(100)
 .sol 
   position: absolute
   top: -200px
-  right: -100px
-  height: 800px
-  width: 900px
-  animation: rotate-scale-down 10s infinite
+  right: -200px
+  height: 850px
+  width: 950px
+  animation: rotate-scale-down2 8s cubic-bezier(0.68, -0.6, 0.32, 1.6) infinite
   opacity: 70%
+
+  @media (max-width: 1350px) 
+    top: -150px
+    right: -150px
+    height: 700px
+    width: 800px
+  
+
+  @media (max-width: 750px) 
+    top: -100px
+    right: -100px
+    height: 500px
+    width: 600px
+  
+
+  @media (max-width: 450px) 
+    top: -50px
+    left: -100px
+    height: 450px
+    width: 500px
+  
+
+
 
 
 @keyframes rotate-scale-down
@@ -174,4 +198,18 @@ $shadows-big:    multiple-box-shadow(100)
     -webkit-transform: scale(1) rotateZ(360deg)
             transform: scale(1) rotateZ(360deg)
   
+@keyframes rotate-scale-down2 
+  0% 
+    -webkit-transform: scale(1) rotateZ(0)
+            transform: scale(1) rotateZ(0)
+  
+  50% 
+    -webkit-transform: scale(0.7) rotateZ(180deg)
+            transform: scale(0.7) rotateZ(180deg)
+  
+  100% 
+    -webkit-transform: scale(1) rotateZ(360deg)
+            transform: scale(1) rotateZ(360deg)
+  
+
 

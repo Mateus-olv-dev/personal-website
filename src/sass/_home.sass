@@ -47,7 +47,7 @@
 
 
 .email_box
-  background-color: #1A2029
+  background-color: variaveis.$roxo-escuro
   width: 30vw
   height: 50px
   border: variaveis.$roxo-escuro solid 1px
@@ -97,6 +97,7 @@
 .email_box:hover
   animation: girar2 0.3s normal
   opacity: 80%
+  transition: 0.5s
 
 .img_button1, .img_button2
   animation: scale-up-center 0.3s normal
@@ -153,11 +154,16 @@
 
   .links_home
     width: 32vw
+  .sol
+    height: 50px
+    width: 50px
 @media (max-width: 450px)
   .subtitulos_banner
     font-size: 13.5px
     text-align: center
-
+  .sol
+    height: 50px
+    width: 50px
 // @media (min-width: 1500px)
 //   #banner
 //     max-height: 60vh
