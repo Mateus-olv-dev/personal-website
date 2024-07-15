@@ -4,77 +4,46 @@
   
     
 #home
-  // background-color: variaveis.$cor-secundaria
+  // background-size: cover
   // background: linear-gradient(to right, variaveis.$roxo-escuro , variaveis.$cor-secundaria 50%)
+  // background-image: url('../imgs/home_background.png')
+  // background-size: cover
+  // background-position: center center
+  // background: linear-gradient(to right, variaveis.$cor-secundaria , #11001c )
   min-height: 100vh
   max-height: 600px
   // box-shadow: 10px 5px 15px variaveis.$cor-secundaria
   display: flex
   flex-direction: column
   justify-content: space-around
-  
+  position: relative
+
 
 #perfil
   display: flex
   flex-direction: column
   gap: 40px
-  margin: 100px 0 0 15vw
+  margin: 30px 0 0 15vw
   
 .nome_banner
+  font-family: "Montserrat"
   color: variaveis.$text-color
   font-size: 80px
-  font-weight: 400
+  font-weight: 600
 
 .subtitulos_banner
+  font-family: 'Roboto'
   color: variaveis.$text-color
   line-height: 50px
-  font-weight: 400
+  font-weight: 600
   letter-spacing: 1px
 
 
 .detail_sub
-  background: linear-gradient(to left, variaveis.$roxo-escuro, variaveis.$roxo-claro)
+  // background: linear-gradient(to left, variaveis.$roxo-escuro, variaveis.$roxo-claro)
+  background-color: #682AE9
   padding: 2px
 
-#container_sociais
-  display: flex
-  gap: 28px
-  align-items: flex-end
-  text-decoration: none
-  justify-content: flex-end
-  margin: 0 15vw 50px 0
-  flex-direction: column
-
-.sociais
-  display: flex
-  gap: 22px
-
-
-.links_home
-  width: 14vw
-  height: 50px
-  border: 2px solid variaveis.$roxo-claro
-  border-radius: 15px
-  display: flex
-  align-items: center
-  justify-content: center
-  gap: 10px
-  text-decoration: none
-  transition: 0.5s
-
-
-.links_home:hover
-  background-color: variaveis.$roxo-claro
-  transition: 0.5s
-
-
-.links_home img
-  height: 38px
- 
-
-.links_home p
-  color: variaveis.$text-color
-  font-weight: 500
 
 
 .email_box
@@ -82,23 +51,28 @@
   width: 30vw
   height: 50px
   border: variaveis.$roxo-escuro solid 1px
-  border-radius: 15px
   display: flex
   align-items: center
   justify-content: space-between
+  margin-left: 15vw
 
 .email
   color: variaveis.$text-color
-  font-size: 16px
+  font-size: 18px
+  font-family: 'Roboto'
   margin: auto
   text-align: center
-  font-weight: 500
+  font-weight: 400
+  letter-spacing: 0.8px
+
 
 .email_after
   color: variaveis.$text-color
   margin: auto
-  font-size: 16px
-  font-weight: 500
+  font-size: 18px
+  font-family: 'Roboto'
+  letter-spacing: 0.8px
+  font-weight: 400
 
 .email, .email_after
   animation: scale-up-center 0.3s normal
@@ -107,7 +81,6 @@
   background-color: variaveis.$roxo-claro
   height: 50px
   width: 50px
-  border-radius: 0 15px 15px 0
   display: flex
   justify-content: center
   align-items: center
@@ -192,3 +165,6 @@
 // @media (max-width: 1300px)
 //   #banner
 //     min-height: 80vh
+
+
+

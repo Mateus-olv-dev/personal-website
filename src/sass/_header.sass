@@ -2,11 +2,10 @@
 @use 'animacoes'
 
 #cabecalho
-  background-color: variaveis.$cor-secundaria
   height: 10vh
   width: 100%
   position: fixed
-  box-shadow: 10px 5px 15px #0B0E12
+  // box-shadow: 10px 5px 15px #0B0E12
   display: flex
   align-items: center
   justify-content: end
@@ -28,18 +27,16 @@ nav
   align-items: center
   gap: 20px
 
-.nav-list li a 
+.nav-list li a
+
   display: inline-block
   animation: scale-in-center 0.4s forwards
-
-.home
-  height: 32px
-  padding: 5px
-  border-radius: 5px
-.home:hover
-  background-color:  #1A2029
+.nav-list li a img
+  height: 30px
+.nav-list li a img:hover
+  background-color: variaveis.$roxo-claro
   transition: 0.3s
-
+  border-radius: 2px
 .navegation
   font-size: 18px
   letter-spacing: 2px
