@@ -2,79 +2,72 @@
 @use 'animacoes'
 
 #projetos
-  padding-top: 20px
+  padding: 20px
+  background-color: #1A2029
+  margin: 100px auto
+  border-radius: 50px
+  width: 85%
+
 .container_projetos
+  background-color: #1A2029
   display: flex
   gap: 30px
   width: 100%
+  height: 100%
   justify-content: center
   align-items: center
   flex-wrap: wrap
   margin: 70px 0px 100px 0px
+
 .card_projeto
   display: flex
-  justify-content: center
+  justify-content: space-between
   align-items: center
-  height: 80vh
-  max-height: 700px
-  width: 28vw
-  min-width: 380px
-  background-color: #1A2029
-  border-radius: 20px
-  box-shadow: 10px 5px 15px #0B0E12
-  // border: variaveis.$roxo-claro solid 1px
-  position: relative
 
-.card_projeto:hover
-  animation: slide-top 0.5s forwards
+.card_projeto img
+  height: 400px
+  width: 500px
+  
+.sobre_projeto
+  display: flex
+  flex-direction: column
+  gap: 10px
+  align-items: center
+  width: 40%
 
-.card_projeto:hover .linguagens_projeto
-  display: block
-
-.card_projeto:hover .ver_projeto 
-  display: block
-
-.card_projeto:hover .code_projeto
-  display: block
-
-.linguagens_projeto
-  display: none
-  position: absolute
-  background-color: #37136293
-  top: 2%
-  left: 5%
-  color: variaveis.$text-color
-  font-size: 1.2rem
+.sobre_projeto h3 
   font-family: 'Roboto'
-  letter-spacing: 2px
-  font-weight: 500
-  padding: 10px
-  border-radius: 0.8rem
-  animation: scale-up-tl 0.5s normal
-
-.code_projeto
-  display: none
-  position: absolute
-  // text-decoration: none
-  bottom: 5%
-  left: 12%
-  text-decoration: none
   color: variaveis.$text-color
-  font-size: 35px
-  animation: heartbeat 2s infinite
 
-.code_projeto:hover
-  color: variaveis.$roxo-escuro
-.ver_projeto
-  display: none
-  position: absolute
-  text-decoration: none
-  bottom: 5%
-  right: 10%
-  animation: bounce-left 2s infinite
+.sobre_projeto p 
+  font-family: 'Roboto'
+  color: variaveis.$text-color
+
+.acessar_projeto
+  display: flex
+  gap: 10px
+
+.acessar_projeto img
   height: 50px
+  width: 50px
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 @media (max-width: 750px)
   .container_projetos
