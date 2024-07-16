@@ -152,7 +152,7 @@ $shadows-big:    multiple-box-shadow(100)
     width: 25vw
 
 
-.sol 
+.hole 
   position: absolute
   top: -200px
   right: -200px
@@ -176,28 +176,15 @@ $shadows-big:    multiple-box-shadow(100)
   
 
   @media (max-width: 450px) 
-    top: -50px
-    left: -100px
-    height: 450px
-    width: 480px
+    top: -60px
+    right: -120px
+    height: 500px
+    width: 530px
   
 
 
 
 
-@keyframes rotate-scale-down
-  0% 
-    -webkit-transform: scale(1) rotateZ(0)
-            transform: scale(1) rotateZ(0)
-  
-  50% 
-    -webkit-transform: scale(0.8) rotateZ(180deg)
-            transform: scale(0.8) rotateZ(180deg)
-
-  100% 
-    -webkit-transform: scale(1) rotateZ(360deg)
-            transform: scale(1) rotateZ(360deg)
-  
 @keyframes rotate-scale-down2 
   0% 
     -webkit-transform: scale(1) rotateZ(0)
@@ -207,9 +194,12 @@ $shadows-big:    multiple-box-shadow(100)
     -webkit-transform: scale(0.7) rotateZ(180deg)
             transform: scale(0.7) rotateZ(180deg)
   
-  100% 
-    -webkit-transform: scale(1) rotateZ(360deg)
-            transform: scale(1) rotateZ(360deg)
+  75% 
+    -webkit-transform: scale(1.2) rotateZ(360deg)
+            transform: scale(1.2) rotateZ(360deg)
+  100%
+    -webkit-transform: scale(1.0) rotateZ(360deg)
+            transform: scale(1.0) rotateZ(360deg)
   
 
 
