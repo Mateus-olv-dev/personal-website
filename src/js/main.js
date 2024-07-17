@@ -1,7 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-  AOS.init();
-});
-
 const copyButton = document.querySelector('.copy_button');
 const textToCopy = document.querySelector('.email');
 const emailAfter = document.querySelector('.email_after');
