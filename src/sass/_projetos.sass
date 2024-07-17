@@ -7,7 +7,7 @@
   margin: 100px auto
   border-radius: 50px
   width: 85%
-
+  
 .container_projetos
   background-color: #1A2029
   display: flex
@@ -21,17 +21,17 @@
 
 .card_projeto
   display: flex
-  justify-content: space-between
+  justify-content: center
   align-items: center
+  gap: 12%
 
 .card_projeto img
   height: 400px
   width: 500px
-  
 .sobre_projeto
   display: flex
   flex-direction: column
-  gap: 10px
+  gap: 20px
   align-items: center
   width: 40%
 
@@ -45,11 +45,43 @@
 
 .acessar_projeto
   display: flex
-  gap: 10px
+  gap: 30px
+  margin-top: 50px
 
 .acessar_projeto img
   height: 50px
   width: 50px
+.code_projeto
+  background-color: variaveis.$roxo-claro
+  min-width: 100px
+  border-radius: 15px
+  text-decoration: none
+  display: flex
+  align-items: center
+  justify-content: center 
+  color: variaveis.$text-color
+  font-size: 20px
+  font-family: 'Roboto'
+  font-weight: bold
+.code_projeto:hover
+  animation: heartbeat 2s infinite
+  background-color: #421d92 
+  transition: 0.5s
+
+.ver_projeto
+  height: 50px
+  width: 50px
+  background-color: variaveis.$roxo-claro
+  min-width: 100px
+  border-radius: 15px
+  display: flex
+  align-items: center
+  justify-content: center 
+
+.ver_projeto:hover
+  animation:  heartbeat 2s infinite
+  background-color: #421d92 
+  transition: 0.5s
 
 
 
@@ -57,29 +89,19 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-  
-
-@media (max-width: 750px)
+@media (max-width: 1050px)
   .container_projetos
     gap: 40px
     margin: 50px 0px 70px 0px
     flex-direction: column
     overflow: hidden
   .card_projeto
-    width: 88vw
+    width: 80vw
     flex-direction: column
     gap: 30px
     align-items: center
+    justify-content: center
+@media (max-width: 750px)
   .card_projeto img
     height: 200px
     width: 300px
