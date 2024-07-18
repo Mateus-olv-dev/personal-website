@@ -52,7 +52,11 @@ html ::-webkit-scrollbar-track
 $shadows-small: multiple-box-shadow(1000)
 $shadows-medium: multiple-box-shadow(400)
 $shadows-big: multiple-box-shadow(300)
-
+@media (max-width: 550px)
+  $shadows-small: multiple-box-shadow(800)
+  $shadows-medium: multiple-box-shadow(300)
+  $shadows-big: multiple-box-shadow(150)
+ 
 #stars,
 #stars2,
 #stars3 
