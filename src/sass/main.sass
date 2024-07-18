@@ -38,22 +38,15 @@ html ::-webkit-scrollbar-track
 
 
 @function multiple-box-shadow ($n) 
-  $value: '#{random(2000)}px #{random(2000)}px #662ae9c5'
+  $value: '#{random(2000)}px #{random(2000)}px #361362'
   @for $i from 2 through $n
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #662ae9c5'
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #361362'
 
   @return unquote($value)
 
-$shadows-small:  multiple-box-shadow(700)
+$shadows-small:  multiple-box-shadow(1000)
 $shadows-medium: multiple-box-shadow(400)
-$shadows-big:    multiple-box-shadow(200)
-
-@media (max-width: 768px) 
-  $shadows-small:  multiple-box-shadow(500)
-  $shadows-medium: multiple-box-shadow(300) 
-  $shadows-big:    multiple-box-shadow(100)
-
-
+$shadows-big:    multiple-box-shadow(300)
 #stars
   width: 1px
   height: 1px
