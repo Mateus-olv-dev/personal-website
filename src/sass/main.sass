@@ -11,98 +11,87 @@
 @use '_projetos'
 @use '_footer'
 
-*
+* 
   padding: 0
   margin: 0
   box-sizing: border-box
 
-html
+
+html 
   scroll-behavior: smooth
 
 
-body
+body 
   background-color: variaveis.$body-color
   overflow-x: hidden
 
+
 html ::-webkit-scrollbar 
-  width: 5px 
+  width: 5px
+
 
 html ::-webkit-scrollbar-thumb 
   background: linear-gradient(to left, variaveis.$roxo-escuro, variaveis.$roxo-claro)
   border-radius: 20px
-  border: 5px solid variaveis.$roxo-escuro 
+  border: 5px solid variaveis.$roxo-escuro
+
 
 html ::-webkit-scrollbar-track 
-  background: variaveis.$cor-secundaria 
-  border-radius: 20px  
+  background: variaveis.$cor-secundaria
+  border-radius: 20px
 
 
-@function multiple-box-shadow ($n) 
+@function multiple-box-shadow($n) 
   $value: '#{random(2000)}px #{random(2000)}px #361362'
-  @for $i from 2 through $n
+  @for $i from 2 through $n 
     $value: '#{$value} , #{random(2000)}px #{random(2000)}px #361362'
-
+  
   @return unquote($value)
 
-$shadows-small:  multiple-box-shadow(1000)
+
+$shadows-small: multiple-box-shadow(1000)
 $shadows-medium: multiple-box-shadow(400)
-$shadows-big:    multiple-box-shadow(300)
-#stars
-  width: 1px
-  height: 1px
+$shadows-big: multiple-box-shadow(300)
+
+#stars,
+#stars2,
+#stars3 
+  position: fixed
+  top: 0
+  left: 0
+  pointer-events: none
+  z-index: -1
+
+
+#stars 
   background: transparent
   box-shadow: $shadows-small
-  animation     : animStar 20s linear infinite
-  position: absolute
-  &:after
-    content: " "
-    position: absolute
-    top: 2000px
-    width: 1px
-    height: 1px
-    background: transparent
-    box-shadow: $shadows-small
-    
-#stars2
-  width: 2px
+  animation: animStar 20s linear infinite
+  width: 1px
   height: 2px
+
+#stars2 
   background: transparent
   box-shadow: $shadows-medium
-  animation     : animStar 50s linear infinite
-  position: absolute
-
-    
-  &:after
-    content: " "
-    position: absolute
-    top: 2000px
-    width: 2px
-    height: 2px
-    background: transparent
-    box-shadow: $shadows-medium
-    
-#stars3
+  animation: animStar 50s linear infinite
   width: 3px
   height: 3px
+
+#stars3 
   background: transparent
   box-shadow: $shadows-big
-  animation     : animStar 60s linear infinite
-  position: absolute
+  animation: animStar 60s linear infinite
+  width: 2px
+  height: 3px
 
-    
-  &:after
-    content: " "
-    position: absolute
-    top: 2000px
-    width: 3px
-    height: 3px
-    background: transparent
-    box-shadow: $shadows-big
-@keyframes animStar
-  from  
+@keyframes animStar 
+  from 
     transform: translateY(0px)
-  to    
+  
+  to 
     transform: translateY(-2000px)
+  
+
 
 
 .feed
