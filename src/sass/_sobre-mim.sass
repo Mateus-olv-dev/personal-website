@@ -7,16 +7,36 @@
   border-radius: 50px
   width: 85%
   z-index: 1
+.container_sobre_mim
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 50px
+  margin: 0px 0px 50px 0px
+  @media (max-width: 750px)
+    flex-direction: column
+.profile_pic
+  height: 300px
+  border: 0.1px solid #682AE9
+  border-radius: 50%
+  @media (max-width: 750px)
+    margin-top: 50px
+    height: 250px
+.textos_sobre_mim
+  width: 50%
+  @media (max-width: 750px)
+    width: 90%
 .sobre_mim_text
-  margin-top: 40px
+  margin-top: 20px
   text-align: center
   font-family: 'Roboto'
   color: variaveis.$text-color
   font-size: 20px
   font-weight: 500
   line-height: 40px
-  margin-bottom: 50px
-
+  margin-bottom: 20px
+  @media(max-width: 750px)
+    font-size: 16px
 @media(max-width: 750px)
   #sobre_mim
     margin: 50px auto
