@@ -11,7 +11,8 @@
 .container_projetos
   background-color: #1A2029
   display: flex
-  gap: 30px
+  flex-direction: column
+  gap: 100px
   width: 100%
   height: 100%
   justify-content: center
@@ -25,9 +26,12 @@
   align-items: center
   gap: 12%
 
-.card_projeto img
+.card_1 img
   height: 400px
   width: 500px
+.card_2 img
+  height: 320px
+  width: 200px
 .sobre_projeto
   display: flex
   flex-direction: column
@@ -95,12 +99,17 @@
     align-items: center
     justify-content: center
 @media (max-width: 750px)
-  .card_projeto img
+  .card_1 img
     height: 200px
     width: 300px
+  .card_2 img
+    height: 270px
+    width: 150px
   .sobre_projeto
     width: 100%
     text-align: center
+  .acessar_projeto
+    margin-top: 20px
   .acessar_projeto img
     height: 40px
     width: 40px
