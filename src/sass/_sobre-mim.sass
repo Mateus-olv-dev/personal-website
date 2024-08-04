@@ -2,7 +2,6 @@
 
 #sobre_mim
   padding: 20px
-  background-color: #1A2029
   margin: 120px auto 60px auto
   border-radius: 50px
   width: 85%
@@ -14,12 +13,12 @@
   gap: 50px
   margin: 0px 0px 50px 0px
   @media (max-width: 750px)
-    flex-direction: column
+    flex-direction: column-reverse
     gap: 15px
 .profile_pic
   height: 300px
   border: 0.1px solid #682AE9
-  border-radius: 50%
+  border-radius: 20px
   @media (max-width: 750px)
     margin-top: 50px
     height: 250px
@@ -30,15 +29,18 @@
 .sobre_mim_text
   margin-top: 20px
   text-align: start
-  font-family: 'Roboto'
+  font-family: "DM Sans"
   color: variaveis.$text-color
-  font-size: 20px
+  font-size: 18px
   font-weight: 500
-  line-height: 40px
+  line-height: 30px
   margin-bottom: 20px
   @media(max-width: 750px)
     font-size: 16px
     line-height: 30px
+    text-align: center
+.sobre_mim_text span
+  color: variaveis.$roxo-claro
 @media(max-width: 750px)
   #sobre_mim
     margin: 50px auto

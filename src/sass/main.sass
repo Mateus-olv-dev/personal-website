@@ -41,70 +41,63 @@ html ::-webkit-scrollbar-track
   border-radius: 20px
 
 
-@function multiple-box-shadow($n) 
-  $value: '#{random(2000)}px #{random(2000)}px #361362'
-  @for $i from 2 through $n 
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #361362'
-  
-  @return unquote($value)
-
+@function multiple-box-shadow($n)
+  $shadows: ()
+  @for $i from 1 through $n
+    $x: random(2000) + px
+    $y: random(2000) + px
+    $color: #361362
+    $shadow: #{$x} #{$y} 0 #{$color}
+    $shadows: append($shadows, $shadow, comma)
+  @return $shadows
 
 $shadows-small: multiple-box-shadow(1000)
 $shadows-medium: multiple-box-shadow(400)
 $shadows-big: multiple-box-shadow(300)
+
 @media (max-width: 550px)
   $shadows-small: multiple-box-shadow(800)
   $shadows-medium: multiple-box-shadow(300)
   $shadows-big: multiple-box-shadow(150)
- 
-#stars,
-#stars2,
-#stars3 
-  position: fixed
-  top: 0
-  left: 0
+
+#stars, #stars2, #stars3
   pointer-events: none
   z-index: -1
 
-
-#stars 
+#stars
   background: transparent
   box-shadow: $shadows-small
   animation: animStar 20s linear infinite
   width: 1px
   height: 2px
 
-#stars2 
+#stars2
   background: transparent
   box-shadow: $shadows-medium
   animation: animStar 50s linear infinite
   width: 3px
   height: 3px
 
-#stars3 
+#stars3
   background: transparent
   box-shadow: $shadows-big
   animation: animStar 60s linear infinite
   width: 2px
   height: 3px
 
-@keyframes animStar 
-  from 
-    transform: translateY(0px)
-  
-  to 
+@keyframes animStar
+  from
+    transform: translateY(0)
+  to
     transform: translateY(-2000px)
-  
-
 
 
 .feed
-  font-family: 'Roboto'
+  font-family: "Space Grotesk"
   margin-top: 60px
   margin-bottom: 30px
-  font-size: 35px
+  font-size: 30px
   color: variaveis.$text-color
-  text-shadow: #141414 3px 3px 15px
   display: flex
   flex-direction: column
   align-items: center
