@@ -15,13 +15,59 @@
   @media (max-width: 750px)
     flex-direction: column-reverse
     gap: 15px
-.profile_pic
+
+
+.profile_pic 
   height: 300px
-  border: 0.1px solid #682AE9
   border-radius: 20px
-  @media (max-width: 750px)
+  @media (max-width: 750px) 
     margin-top: 50px
     height: 250px
+  
+// Estilo do container da foto
+.myphoto
+  background-image: url('src/')
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  border-radius: 20px
+  // Gradiente ao redor da foto (antes)
+.myphoto::after 
+  content: ''
+  position: absolute
+  width: 500px
+  height: 500px
+  background-image: conic-gradient(transparent, transparent, transparent, #1c0b3f)
+  animation: border-rotation 4s linear infinite
+  animation-delay: -2s
+
+.myphoto::before 
+  content: ''
+  position: absolute
+  width: 500px
+  height: 500px
+  background-image: conic-gradient(transparent, transparent, transparent, #682AE9)
+  animation: border-rotation 4s linear infinite
+
+.myphoto span 
+  position: absolute
+  inset: 5px
+  background-color: variaveis.$body-color
+  border-radius: 16px
+  z-index: 1
+  
+
+// Animação de rotação da borda
+@keyframes border-rotation 
+  0% 
+    transform: rotate(0deg)
+  
+  100% 
+    transform: rotate(360deg)
+  
+
 .textos_sobre_mim
   width: 50%
   @media (max-width: 750px)
