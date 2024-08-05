@@ -22,9 +22,9 @@
 
 <body>
  
-  <div id="stars"></div>
+  <!-- <div id="stars"></div>
   <div id="stars2"></div>
-  <div id="stars3"></div>
+  <div id="stars3"></div> -->
 
   <header id="cabecalho">
       <ul class="nav-list">
@@ -60,14 +60,14 @@
 
   <section id="home">
    
-    <picture>
-      <source media="(max-width: 750px)" srcset="src/imgs/hole_mobile.webp">
-      <img class="hole" src="src/imgs/Graphic-Designer-Online-Portfolio.webp" alt="elemento visual hole" >
-    </picture>
 
-   
     
-
+    <div class="ripple-background"></div>
+    <div class="circle xxlarge shade1"></div>
+    <div class="circle xlarge shade2"></div>
+    <div class="circle large shade3"></div>
+    <div class="circle mediun shade4"></div>
+    <div class="circle small shade5"></div>
 
     <div id="perfil">
 
@@ -213,7 +213,7 @@
     </div>
     
 
-    <div class="container_projetos">
+    <!-- <div class="container_projetos">
 
       <div class="card_projeto card_1">
         <img src="src/imgs/projeto_01.webp" class="print_projeto" alt="Imagem de projeto 01">
@@ -236,10 +236,10 @@
           <div class="sobre_projeto">
   
             <h3 class="titulo_projeto">Calculadora IMC - Flutter</h3>
-            <p class="descricao_projeto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime reprehenderit saepe libero iure, assumenda provident modi quo ad accusantium. Rerum a doloribus, delectus fugiat atque consequatur totam officia quisquam similique!</p>
+            <p class="descricao_projeto">Calculadora de IMC Desenvolvida com <span>Flutter</span> e <span>Dart</span></p>
   
             <div class="acessar_projeto">
-              <a class="code_projeto" href="#link_github_projeto" target="_blank">&lt;/&gt;</a>
+              <a class="code_projeto" href="https://github.com/Mateus-olv-dev/calculadora_imc_flutter/tree/master" target="_blank">&lt;/&gt;</a>
               <a class="ver_projeto" href="#link_projeto" target="_blank"><img src="src/imgs/icons/seta-direita (3).png" ></a>
             </div>
 
@@ -247,8 +247,13 @@
 
       </div>
     </div>
-  </div>
-
+  </div> -->
+  <div class="grid-container">
+    <div class="item1">Item 1</div>
+    <div class="item2"><img src="src/imgs/projeto_flutter_01.webp" alt=""></div>
+    <div class="item3">Item 3</div>
+    <button class="small-button">Ver mais +</button>
+</div>
 
 
   </section>
@@ -263,6 +268,7 @@
 
   <script src="src/js/main.js"></script>
   <script src="src/js/scrollAnimations.js"></script>
+  
 </body>
 
 </html>

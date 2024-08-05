@@ -118,7 +118,8 @@ $shadows-big: multiple-box-shadow(300)
   .detail_02
     width: 25vw
 
-
+#canvas 
+  display: block
 .hole 
   position: absolute
   top: -200px
@@ -171,3 +172,81 @@ $shadows-big: multiple-box-shadow(300)
   
 
 
+.circle
+  position: absolute
+  border-radius: 50%
+  background: white
+  animation: ripple 15s infinite
+  box-shadow: 0px 0px 1px 0px variaveis.$shadow-color
+
+
+.small
+  background-color: variaveis.$roxo-escuro
+  width: 200px
+  height: 200px
+  right: -100px
+  top: -100px
+
+
+.medium
+  background-color: variaveis.$roxo-escuro
+  width: 400px
+  height: 400px
+  right: -200px
+  top: -200px
+
+
+.large
+  background-color: variaveis.$roxo-escuro
+  width: 600px
+  height: 600px
+  right: -300px
+  top: -300px
+
+.xlarge
+  background-color: variaveis.$roxo-escuro
+  width: 800px
+  height: 800px
+  right: -400px
+  top: -400px
+
+
+.xxlarge
+  background-color: variaveis.$roxo-escuro
+  width: 1000px
+  height: 1000px
+  right: -500px
+  top: -500px
+
+
+.shade1
+  opacity: 0.2
+
+.shade2
+  opacity: 0.5
+
+
+.shade3
+  opacity: 0.7
+
+
+.shade4
+  opacity: 0.8
+
+
+.shade5
+  opacity: 0.9
+
+
+@keyframes ripple
+  0%
+    transform: scale(0.8)
+  
+  
+  50%
+    transform: scale(1.2)
+  
+  
+  100%
+    transform: scale(0.8)
+  

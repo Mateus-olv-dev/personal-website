@@ -7,119 +7,177 @@
   border-radius: 50px
   width: 85%
   z-index: 1
-.container_projetos
-  display: flex
-  flex-direction: column
-  gap: 100px
-  width: 100%
-  height: 100%
-  justify-content: center
-  align-items: center
-  flex-wrap: wrap
-  margin: 70px 0px 100px 0px
+// .container_projetos
+//   display: flex
+//   flex-direction: column
+//   gap: 100px
+//   width: 100%
+//   height: 100%
+//   justify-content: center
+//   align-items: center
+//   flex-wrap: wrap
+//   margin: 70px 0px 100px 0px
 
-.card_projeto
-  display: flex
-  justify-content: center
-  align-items: center
-  gap: 12%
+// .card_projeto
+//   display: flex
+//   justify-content: center
+//   align-items: center
+//   gap: 12%
 
-.card_1 img
-  height: 300px
-  width: 400px
-.card_2 img
-  height: 300px
-  width: 150px
-.sobre_projeto
-  display: flex
-  flex-direction: column
-  gap: 20px
-  align-items: center
-  width: 40%
+// .card_1 img
+//   height: 300px
+//   width: 400px
+// .card_2 img
+//   height: 300px
+//   width: 150px
+// .sobre_projeto
+//   display: flex
+//   flex-direction: column
+//   gap: 20px
+//   align-items: center
+//   width: 40%
 
-.sobre_projeto h3 
-  font-family: "Space Grotesk"
-  color: variaveis.$text-color
+// .sobre_projeto h3 
+//   font-family: "Space Grotesk"
+//   color: variaveis.$text-color
 
-.sobre_projeto p 
-  font-family: "DM Sans"
-  color: variaveis.$text-color
-  font-size: 18px 
-.acessar_projeto
-  display: flex
+// .sobre_projeto p 
+//   font-family: "DM Sans"
+//   color: variaveis.$text-color
+//   font-size: 18px 
+// .acessar_projeto
+//   display: flex
+//   gap: 30px
+//   margin-top: 50px
+
+// .acessar_projeto img
+//   height: 50px
+//   width: 50px
+// .code_projeto
+//   background-color: variaveis.$roxo-claro
+//   min-width: 100px
+//   border-radius: 15px
+//   text-decoration: none
+//   display: flex
+//   align-items: center
+//   justify-content: center 
+//   color: variaveis.$text-color
+//   font-size: 20px
+//   font-family: 'Roboto'
+//   font-weight: bold
+// .code_projeto:hover
+//   animation: heartbeat 2s infinite
+//   background-color: #421d92 
+//   transition: 0.5s
+
+// .ver_projeto
+//   height: 50px
+//   width: 50px
+//   background-color: variaveis.$roxo-claro
+//   min-width: 100px
+//   border-radius: 15px
+//   display: flex
+//   align-items: center
+//   justify-content: center 
+
+// .ver_projeto:hover
+//   animation:  heartbeat 2s infinite
+//   background-color: #421d92 
+//   transition: 0.5s
+
+// @media (max-width: 1050px)
+//   .container_projetos
+//     gap: 40px
+//     margin: 50px 0px 70px 0px
+//     flex-direction: column
+//   .card_projeto
+//     width: 80vw
+//     flex-direction: column
+//     gap: 30px
+//     align-items: center
+//     justify-content: center
+// @media (max-width: 750px)
+//   .card_1 img
+//     height: 200px
+//     width: 300px
+//   .card_2 img
+//     height: 270px
+//   .sobre_projeto
+//     width: 100%
+//     text-align: center
+//   .acessar_projeto
+//     margin-top: 20px
+//   .acessar_projeto img
+//     height: 40px
+//     width: 40px
+//   .code_projeto
+//     height: 30px
+//     width: 30px
+//     border-radius: 10px
+//   .ver_projeto
+//     height: 30px
+//     width: 30px
+//     border-radius: 10px
+
+// .card_projeto h3 
+//   color: variaveis.$text-color
+//   font-size: 32px
+.grid-container 
+  display: grid
+  grid-template-columns: 2fr 1fr
+  grid-template-rows: 1fr 1fr auto
   gap: 30px
-  margin-top: 50px
+  width: 70%
+  margin: 20px auto 0px auto
+  height: 80vh
 
-.acessar_projeto img
-  height: 50px
-  width: 50px
-.code_projeto
-  background-color: variaveis.$roxo-claro
-  min-width: 100px
-  border-radius: 15px
-  text-decoration: none
+
+.item1 
+  border-radius: 20px
+  background-color: #1d242e
+  grid-column: 1 / 2
+  grid-row: 1 / 2
+  width: calc(100% - 40px)
+
+
+
+.item2 
+  border-radius: 20px
+  background-color: #1d242e
+  backdrop-filter: blur(23px) contrast(101%)
+  grid-column: 2 / 3
+  grid-row: 1 / 3
+  height: calc(100% - 70px)
   display: flex
   align-items: center
-  justify-content: center 
-  color: variaveis.$text-color
-  font-size: 20px
-  font-family: 'Roboto'
-  font-weight: bold
-.code_projeto:hover
-  animation: heartbeat 2s infinite
-  background-color: #421d92 
-  transition: 0.5s
+  justify-content: center
 
-.ver_projeto
-  height: 50px
-  width: 50px
+
+.item3 
+  border-radius: 20px
+  background-color: #1d242e
+  grid-column: 1 / 2
+  grid-row: 2 / 3
+  width: calc(100% - 40px)
+
+
+.small-button
+  grid-column: 2 / 3
+  grid-row: 2 / 3 
+  align-self: end 
+  padding: 10px
   background-color: variaveis.$roxo-claro
-  min-width: 100px
-  border-radius: 15px
-  display: flex
-  align-items: center
-  justify-content: center 
+  color: variaveis.$text-color
+  border: none
+  border-radius: 10px
+  cursor: pointer
+  margin-top: 40px
+  width: calc(100% - 40%)
+  margin: 0 auto
 
-.ver_projeto:hover
-  animation:  heartbeat 2s infinite
-  background-color: #421d92 
+.small-button:hover
+  filter: blur(1px)
   transition: 0.5s
 
-@media (max-width: 1050px)
-  .container_projetos
-    gap: 40px
-    margin: 50px 0px 70px 0px
-    flex-direction: column
-  .card_projeto
-    width: 80vw
-    flex-direction: column
-    gap: 30px
-    align-items: center
-    justify-content: center
-@media (max-width: 750px)
-  .card_1 img
-    height: 200px
-    width: 300px
-  .card_2 img
-    height: 270px
-  .sobre_projeto
-    width: 100%
-    text-align: center
-  .acessar_projeto
-    margin-top: 20px
-  .acessar_projeto img
-    height: 40px
-    width: 40px
-  .code_projeto
-    height: 30px
-    width: 30px
-    border-radius: 10px
-  .ver_projeto
-    height: 30px
-    width: 30px
-    border-radius: 10px
 
-.card_projeto h3 
-  color: variaveis.$text-color
-  font-size: 32px
-  
+
