@@ -268,12 +268,10 @@
   0% {
     -webkit-filter: blur(12px);
     -webkit-filter-filter: blur(12px);
-    opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
     -webkit-filter-filter: blur(0px);
-    opacity: 1;
   }
 }
 [data-anime] {
@@ -1049,6 +1047,14 @@ html ::-webkit-scrollbar-track {
   right: -100px;
   top: -100px;
 }
+@media (max-width: 450px) {
+  .small {
+    width: 100px;
+    height: 100px;
+    top: -50;
+    right: -50;
+  }
+}
 
 .medium {
   background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%));
@@ -1058,6 +1064,14 @@ html ::-webkit-scrollbar-track {
   height: 400px;
   right: -200px;
   top: -200px;
+}
+@media (max-width: 450px) {
+  .medium {
+    width: 200px;
+    height: 200px;
+    top: -100;
+    right: -100;
+  }
 }
 
 .large {
@@ -1069,6 +1083,14 @@ html ::-webkit-scrollbar-track {
   right: -300px;
   top: -300px;
 }
+@media (max-width: 450px) {
+  .large {
+    width: 300px;
+    height: 300px;
+    top: -150;
+    right: -150;
+  }
+}
 
 .xlarge {
   background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%));
@@ -1079,6 +1101,14 @@ html ::-webkit-scrollbar-track {
   right: -400px;
   top: -400px;
 }
+@media (max-width: 450px) {
+  .xlarge {
+    width: 400px;
+    height: 400px;
+    top: -200;
+    right: -200;
+  }
+}
 
 .xxlarge {
   background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%));
@@ -1088,6 +1118,14 @@ html ::-webkit-scrollbar-track {
   height: 1000px;
   right: -500px;
   top: -500px;
+}
+@media (max-width: 450px) {
+  .xxlarge {
+    width: 500px;
+    height: 500px;
+    top: -250;
+    right: -250;
+  }
 }
 
 .shade1 {

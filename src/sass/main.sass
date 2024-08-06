@@ -107,8 +107,11 @@ html ::-webkit-scrollbar-track
   height: 200px
   right: -100px
   top: -100px
-
-
+  @media (max-width: 450px)
+    width: 100px
+    height: 100px
+    top: -50
+    right: -50
 .medium
   background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
   box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5)
@@ -117,8 +120,11 @@ html ::-webkit-scrollbar-track
   height: 400px
   right: -200px
   top: -200px
-
-
+  @media (max-width: 450px)
+    width: 200px
+    height: 200px
+    top: -100
+    right: -100
 .large
   box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5) 
   background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
@@ -127,7 +133,11 @@ html ::-webkit-scrollbar-track
   height: 600px
   right: -300px
   top: -300px
-
+  @media (max-width: 450px)
+    width: 300px
+    height: 300px
+    top: -150
+    right: -150
 .xlarge
   background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
   box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5)
@@ -136,8 +146,11 @@ html ::-webkit-scrollbar-track
   height: 800px
   right: -400px
   top: -400px
-
-
+  @media (max-width: 450px)
+    width: 400px
+    height: 400px
+    top: -200
+    right: -200
 .xxlarge
   background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
   box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5)
@@ -146,8 +159,11 @@ html ::-webkit-scrollbar-track
   height: 1000px
   right: -500px
   top: -500px
-
-
+  @media (max-width: 450px)
+    width: 500px
+    height: 500px
+    top: -250
+    right: -250
 .shade1
   opacity: 0.4
 
