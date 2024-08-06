@@ -16,7 +16,7 @@
   display: flex
   flex-direction: column
   gap: 40px
-  margin: 0px 0 0 15vw
+  margin: 15vh 0 0 15vw
   
 .nome_banner
   font-family: "Space Grotesk"
@@ -24,6 +24,8 @@
   font-size: 80px
   font-weight: 500
   z-index: 2
+  animation: focus-in-expand 1s normal
+
 
 .subtitulos_banner
   font-family: "DM Sans"
@@ -32,6 +34,8 @@
   font-weight: 400
   letter-spacing: 0px
   z-index: 2
+  animation: focus-in-expand 1s normal
+
 
 .detail_sub
   background-color: #4d1faf
@@ -48,6 +52,8 @@
   justify-content: space-between
   margin-left: 15vw
   z-index: 2
+  box-shadow: 0 0 10px 0px rgba(64, 26, 146, 0.363),  10px 10px 10px rgba(64, 26, 146, 0.363)
+  animation: focus 1s normal
 .email
   color: variaveis.$text-color
   font-size: 18px
@@ -87,9 +93,9 @@
   background-color: #4d1faf
 
 .email_box:hover
-  animation: girar2 0.3s normal
   opacity: 80%
   transition: 0.5s
+  box-shadow: 0px 0px 0px 
 
 .img_button1, .img_button2
   animation: scale-up-center 0.3s normal
