@@ -97,8 +97,10 @@ html ::-webkit-scrollbar-track
   background: white
   animation: rotate-scale-down2 15s  cubic-bezier(0.68, -0.6, 0.32, 1.6) infinite, focus 1s normal
   box-shadow: 0px 0px 1px 0px variaveis.$shadow-color
-  @media (max-width: 450px)
-    animation: riple 15s infinite, focus 1s normal
+
+@media (max-width: 450px)
+  .circle
+    animation: ripple 15s infinite, focus 1s normal
 
 
 .small
