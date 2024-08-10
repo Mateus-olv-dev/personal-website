@@ -17,22 +17,25 @@
     gap: 15px
 
 
-.profile_pic 
-  height: 300px
-  border-radius: 20px
-  @media (max-width: 750px) 
-    margin-top: 50px
-    height: 250px
+.profile_pic
+  width: 95%
+  height: 96%
+  border-radius: 16px
+  z-index: 10
   
 // Estilo do container da foto
 .myphoto
-  background-image: url('src/')
+  width: 200px
+  height: 270px
   position: relative
   display: flex
   justify-content: center
   align-items: center
   overflow: hidden
   border-radius: 20px
+  @media (max-width: 750px)
+    margin-top: 30px  
+
   // Gradiente ao redor da foto (antes)
 .myphoto::after 
   content: ''

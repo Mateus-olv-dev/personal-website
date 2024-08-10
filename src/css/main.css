@@ -462,7 +462,7 @@ nav {
   font-family: "Space Grotesk";
   color: #f6fbff;
   font-size: 80px;
-  font-weight: 500;
+  font-weight: 600;
   z-index: 2;
   animation: focus-in-expand 1s normal;
 }
@@ -499,7 +499,7 @@ nav {
   color: #f6fbff;
   font-size: 18px;
   font-family: "DM Sans";
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   font-weight: 400;
   letter-spacing: 0.8px;
@@ -507,7 +507,7 @@ nav {
 
 .email_after {
   color: #f6fbff;
-  margin: auto;
+  margin: 0 auto;
   font-size: 18px;
   font-family: "DM Sans";
   letter-spacing: 0.8px;
@@ -565,6 +565,7 @@ nav {
     gap: 120px;
   }
   #perfil {
+    margin: 10vh auto 0 auto;
     margin-right: auto;
     padding: 0;
     align-items: center;
@@ -641,24 +642,26 @@ nav {
 }
 
 .profile_pic {
-  height: 300px;
-  border-radius: 20px;
-}
-@media (max-width: 750px) {
-  .profile_pic {
-    margin-top: 50px;
-    height: 250px;
-  }
+  width: 95%;
+  height: 96%;
+  border-radius: 16px;
+  z-index: 10;
 }
 
 .myphoto {
-  background-image: url("src/");
+  width: 200px;
+  height: 270px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   border-radius: 20px;
+}
+@media (max-width: 750px) {
+  .myphoto {
+    margin-top: 30px;
+  }
 }
 
 .myphoto::after {
