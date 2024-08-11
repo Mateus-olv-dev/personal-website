@@ -859,7 +859,6 @@ nav {
   .skill {
     height: 5vh;
     padding: 5px;
-    box-shadow: 5px 3px 7px #0B0E12;
     gap: 8px;
     padding-right: 5px;
   }
