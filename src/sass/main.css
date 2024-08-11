@@ -1,10 +1,8 @@
 @keyframes flip {
   0% {
-    -webkit-transform: rotateY(0);
     transform: rotateY(0);
   }
   100% {
-    -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg);
   }
 }
@@ -26,19 +24,15 @@
 }
 @keyframes girar2 {
   0% {
-    -webkit-transform: rotateY(0);
     transform: rotateY(0);
   }
   25% {
-    -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
   }
   50% {
-    -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
   }
   100% {
-    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
 }
@@ -55,16 +49,6 @@
   }
 }
 @keyframes shadow-drop-center {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    -webkit-box-shadow-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-  100% {
-    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    -webkit-box-shadow-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-  }
-}
-@-webkit-keyframes shadow-drop-center {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     -webkit-box-shadow-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -1254,6 +1238,4 @@ html ::-webkit-scrollbar-track {
   100% {
     transform: scale(0.4);
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

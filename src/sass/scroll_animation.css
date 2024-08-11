@@ -1,0 +1,17 @@
+[data-anime] {
+  opacity: 0;
+  transition: 0.7s;
+}
+
+[data-anime=left] {
+  transform: translate3d(-200px, 0, 0);
+}
+
+[data-anime=right] {
+  transform: translate3d(200px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}/*# sourceMappingURL=scroll_animation.css.map */
