@@ -595,7 +595,7 @@ nav {
     justify-content: center;
   }
   .email_box {
-    padding: 0;
+    padding: 10px;
     margin: 0;
     width: 70vw;
     height: 50px;
