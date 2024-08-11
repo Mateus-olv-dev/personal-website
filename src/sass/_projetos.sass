@@ -11,6 +11,7 @@
     width: 95%
 .grid-container 
   display: grid
+  grid-auto-flow: dense
   grid-template-columns: 2fr 1fr
   grid-template-rows: 1fr 1fr auto
   gap: 30px
@@ -20,9 +21,11 @@
   @media (max-width: 750px)
     width: 95%
 .card_projetos
+  background: hsl(217, 21%, 15%)
+  backdrop-filter: blur( 13.5px )
+  -webkit-backdrop-filter: blur( 13.5px )
   position: relative
   border-radius: 20px
-  background-color: #1d242e
   display: flex
   align-items: center
   justify-content: center
@@ -30,7 +33,7 @@
   @media (max-width: 450px)
     min-width: 60vw
 .card_projetos:hover
-  box-shadow: 5px 10px 10px 3px rgba(64, 26, 146, 0.363),  5px 7px 10px rgba(64, 26, 146, 0.363)
+  box-shadow: 0 8px 32px 0 rgba(64, 26, 146, 0.253)
   transition: 0.3s
 
 .card_projetos:hover img
@@ -68,11 +71,14 @@
   bottom: 0
   width: 100%
   height: 70%
-  background-color: #181d25ec
+  background-color: hsla(217, 21%, 15%, 0.95)
+  // backdrop-filter: blur( 13.5px )
+  // -webkit-backdrop-filter: blur( 13.5px )
   border-radius: 0px 0px 20px 20px
   align-items: center
   justify-content: space-evenly
   flex-direction: column
+  z-index: 2
 .sobre_projeto h2
   font-family: 'DM Sans'
   color: variaveis.$text-color
@@ -82,12 +88,13 @@
   display: flex
   gap: 30px
   margin-top: 50px
+  z-index: 10
 
 .acessar_projeto img
   height: 30px
   width: 20px
 .code_projeto
-  background-color: variaveis.$roxo-claro
+  background-color: hsla(259, 81%, 54%, 0.5)
   min-width: 70px
   border-radius: 10px
   text-decoration: none
@@ -107,20 +114,20 @@
   grid-row: 2 / 3 
   align-self: end 
   padding: 10px
-  background-color: variaveis.$roxo-claro
+  background-color: hsla(259, 81%, 54%, 0.2)
   color: variaveis.$text-color
+  font-weight: bold
+  letter-spacing: 0.8px
   border: none
   border-radius: 10px
   cursor: pointer
   margin-top: 40px
   width: calc(100% - 40%)
   margin: 0 auto
-  box-shadow: 0 0 10px 0px rgba(64, 26, 146, 0.363),  5px 5px 5px rgba(64, 26, 146, 0.363)
-
 
 .small-button:hover
-  box-shadow: 0px 0px 0px
-  transition: 0.3s
+  background-color: hsla(259, 81%, 54%, 1)
+  transition: 1s
 
 
 

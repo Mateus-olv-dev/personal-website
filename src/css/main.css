@@ -46,12 +46,10 @@
   0% {
     -webkit-transform: translateY(200px);
     -webkit-transform-transform: translateY(200px);
-    -webkit-transform-opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0px);
     -webkit-transform-transform: translateY(0px);
-    -webkit-transform-opacity: 1;
   }
 }
 @keyframes shadow-drop-center {
@@ -495,7 +493,7 @@ nav {
 }
 
 .email_box {
-  background-color: #4d1faf;
+  background-color: hsla(259, 81%, 54%, 0.3);
   width: 30vw;
   height: 50px;
   display: flex;
@@ -503,7 +501,7 @@ nav {
   justify-content: space-between;
   margin-left: 15vw;
   z-index: 2;
-  box-shadow: 0 0 10px 0px rgba(64, 26, 146, 0.363), 10px 10px 10px rgba(64, 26, 146, 0.363);
+  box-shadow: 0 8px 32px 0 rgba(64, 26, 146, 0.253);
   animation: focus 1s normal;
 }
 
@@ -531,7 +529,7 @@ nav {
 }
 
 .copy_button {
-  background-color: #4d1faf;
+  background-color: hsla(259, 81%, 54%, 0.1);
   height: 50px;
   width: 50px;
   display: flex;
@@ -778,7 +776,7 @@ nav {
 }
 
 .skill {
-  background-color: #0E1116;
+  background-color: hsla(218, 22%, 7%, 0.2);
   display: flex;
   gap: 5px;
   align-items: center;
@@ -786,7 +784,6 @@ nav {
   padding: 10px;
   padding-right: 20px;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px #0B0E12;
   cursor: pointer;
 }
 
@@ -890,6 +887,7 @@ nav {
 
 .grid-container {
   display: grid;
+  grid-auto-flow: dense;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr auto;
   gap: 30px;
@@ -904,9 +902,11 @@ nav {
 }
 
 .card_projetos {
+  background: hsl(217, 21%, 15%);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
   position: relative;
   border-radius: 20px;
-  background-color: #1d242e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -919,7 +919,7 @@ nav {
 }
 
 .card_projetos:hover {
-  box-shadow: 5px 10px 10px 3px rgba(64, 26, 146, 0.363), 5px 7px 10px rgba(64, 26, 146, 0.363);
+  box-shadow: 0 8px 32px 0 rgba(64, 26, 146, 0.253);
   transition: 0.3s;
 }
 
@@ -969,11 +969,12 @@ nav {
   bottom: 0;
   width: 100%;
   height: 70%;
-  background-color: rgba(24, 29, 37, 0.9254901961);
+  background-color: hsla(217, 21%, 15%, 0.95);
   border-radius: 0px 0px 20px 20px;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  z-index: 2;
 }
 
 .sobre_projeto h2 {
@@ -986,6 +987,7 @@ nav {
   display: flex;
   gap: 30px;
   margin-top: 50px;
+  z-index: 10;
 }
 
 .acessar_projeto img {
@@ -994,7 +996,7 @@ nav {
 }
 
 .code_projeto {
-  background-color: #682AE9;
+  background-color: hsla(259, 81%, 54%, 0.5);
   min-width: 70px;
   border-radius: 10px;
   text-decoration: none;
@@ -1018,20 +1020,21 @@ nav {
   grid-row: 2/3;
   align-self: end;
   padding: 10px;
-  background-color: #682AE9;
+  background-color: hsla(259, 81%, 54%, 0.2);
   color: #f6fbff;
+  font-weight: bold;
+  letter-spacing: 0.8px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   margin-top: 40px;
   width: 60%;
   margin: 0 auto;
-  box-shadow: 0 0 10px 0px rgba(64, 26, 146, 0.363), 5px 5px 5px rgba(64, 26, 146, 0.363);
 }
 
 .small-button:hover {
-  box-shadow: 0px 0px 0px;
-  transition: 0.3s;
+  background-color: hsl(259, 81%, 54%);
+  transition: 1s;
 }
 
 footer {
