@@ -776,7 +776,6 @@ nav {
   height: 10vh;
   padding: 10px;
   padding-right: 20px;
-  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -1017,7 +1016,6 @@ nav {
   font-weight: bold;
   letter-spacing: 0.8px;
   border: none;
-  border-radius: 10px;
   cursor: pointer;
   margin-top: 40px;
   width: 60%;
@@ -1084,6 +1082,11 @@ html ::-webkit-scrollbar-track {
 }
 
 .feed {
+  background-color: hsla(259, 81%, 54%, 0.2);
+  transform: skewY(-3deg);
+  box-shadow: 0 8px 32px 0 rgba(64, 26, 146, 0.253);
+  padding: 20px;
+  width: 100%;
   font-family: "Space Grotesk";
   margin-top: 60px;
   margin-bottom: 30px;
@@ -1096,13 +1099,8 @@ html ::-webkit-scrollbar-track {
   text-align: center;
 }
 
-.detail_02 {
-  background: linear-gradient(to right, rgb(104, 42, 233), #682AE9);
-  height: 0.5vh;
-  width: 20vh;
-  margin-top: 5px;
-  border-radius: 15px;
-  box-shadow: #141414 5px 5px 10px;
+.feed h2 {
+  transform: skewY(3deg);
 }
 
 @media (max-width: 750px) {
