@@ -289,17 +289,17 @@
   transition: 0.7s;
 }
 
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
 [data-anime=left] {
   transform: translate3d(-200px, 0, 0);
 }
 
 [data-anime=right] {
   transform: translate3d(200px, 0, 0);
-}
-
-[data-anime].animate {
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px);
 }
 
 #cabecalho {
@@ -488,7 +488,7 @@ nav {
 }
 
 .detail_sub {
-  background-color: #4d1faf;
+  background-color: hsla(259, 81%, 54%, 0.3);
   padding: 2px;
 }
 
@@ -672,7 +672,7 @@ nav {
   position: absolute;
   width: 500px;
   height: 500px;
-  background-image: conic-gradient(transparent, transparent, transparent, #1c0b3f);
+  background-image: conic-gradient(transparent, transparent, transparent, hsla(259, 81%, 54%, 0.5));
   animation: border-rotation 4s linear infinite;
   animation-delay: -2s;
 }
@@ -682,7 +682,7 @@ nav {
   position: absolute;
   width: 500px;
   height: 500px;
-  background-image: conic-gradient(transparent, transparent, transparent, #682AE9);
+  background-image: conic-gradient(transparent, transparent, transparent, hsla(259, 81%, 54%, 0.6));
   animation: border-rotation 4s linear infinite;
 }
 
