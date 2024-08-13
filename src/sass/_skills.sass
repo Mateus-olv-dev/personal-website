@@ -3,13 +3,18 @@
 
   
 #skills
+  box-shadow: 0 -25px 32px 0 rgba(64, 26, 146, 0.253)
+  // transform: skewY(2deg)
   padding-top: 20px
-  width: 70%
-  margin: 50px auto 60px auto
+  width: 100vw
+  margin: 20px auto 60px auto
   border-radius: 50px
   padding-bottom: 100px
   z-index: 1
+#skills h2 
+  transform: skewY(-1deg)
 .container_skills
+  transform: skewY(-1deg)
   padding: 20px
   border-radius: 30px
   margin: 20px auto 20px auto
@@ -18,6 +23,7 @@
   align-items: center
   justify-content: center
   flex-wrap: wrap
+
 .titulo_skill
   font-family: "Roboto"
   color: variaveis.$text-color
@@ -83,7 +89,6 @@
 
 @media (max-width: 750px)
   #skills
-    width: 90%
     margin: 0px auto 0px auto
   .container_skills
     gap: 10px

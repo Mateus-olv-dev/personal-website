@@ -4,9 +4,12 @@
   padding: 20px
   margin: 40px auto 60px auto
   border-radius: 50px
-  width: 85%
+  width: 100vw
   z-index: 1
+  box-shadow: 0 -25px 32px 0 rgba(64, 26, 146, 0.253)
+  // transform: skewY(-2deg)
 .container_sobre_mim
+  transform: skewY(1deg)
   display: flex
   align-items: center
   justify-content: center
@@ -20,7 +23,6 @@
 .profile_pic
   width: 95%
   height: 96%
-  border-radius: 16px
   z-index: 10
   
 // Estilo do container da foto
@@ -32,7 +34,6 @@
   justify-content: center
   align-items: center
   overflow: hidden
-  border-radius: 20px
   @media (max-width: 750px)
     margin-top: 30px  
 
@@ -59,7 +60,6 @@
   position: absolute
   inset: 5px
   background-color: variaveis.$body-color
-  border-radius: 16px
   z-index: 1
   
 
@@ -94,3 +94,40 @@
 @media(max-width: 750px)
   #sobre_mim
     margin: 0px auto 0px auto
+
+
+
+.container 
+  position: relative
+  background: #2c3e50
+  height: 50vh
+
+
+.wave 
+  position: absolute
+  height: 92px
+  width: 100%
+  background: #2c3e50
+  bottom: 0
+
+
+.wave::before, .wave::after 
+  content: ""
+  display: block
+  position: absolute
+  border-radius: 100% 50%
+
+
+.wave::before 
+  width: 55%
+  height: 109%
+  background-color: #fff
+  right: -1.5%
+  top: 60%
+
+.wave::after 
+  width: 55%
+  height: 100%
+  background-color: #2c3e50
+  left: -1.5%
+  top: 40%

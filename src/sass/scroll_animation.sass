@@ -4,11 +4,15 @@
 
 [data-anime].animate
   opacity: 1
-  transform: translateY(0px)
+  transform: translateY(0px) skewY(-1deg)
 
   
 [data-anime="left"]
- transform: translateX(-200px) skewY(-3deg)
+  transform: translateX(-200px) skewY(5deg)
+
+
+
+
 [data-anime="right"]
   transform: translate3d(200px, 0, 0)
 
@@ -20,38 +24,9 @@
   transition: 0.7s
 [data-animation].animation
   opacity: 1
-  transform: skewY(-3deg)
+  transform: translateY(0px) skewY(1deg)
+
 [data-animation="right1"]
-  transform: skewY(2deg)
+  transform: translateX(200px) skewY(-5deg)
 
 
-@keyframes flip
-  0%
-    -webkit-transform: rotateX(0)
-    transform: rotateX(0)
-  100%
-    -webkit-transform: rotateX(360deg)
-    transform: rotateX(360deg)
-
-@keyframes scale-up-center 
-  0% 
-    -webkit-transform: scale(0.5)
-            transform: scale(0.5)
-  
-  100% 
-    -webkit-transform: scale(1)
-            transform: scale(1)
-  
-
-// @keyframes scale-up-center 
-//   0% 
-//     -webkit-transform: scale(0.5)
-//             transform: scale(0.5)
-  
-//   100% 
-//     -webkit-transform: scale(1)
-//             transform: scale(1)
-// [data-anime="surge"]
-//  animation: scale-up-center 10s forwards
-
- 
