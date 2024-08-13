@@ -605,7 +605,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 85vh;
+    min-height: 100vh;
     gap: 120px;
   }
   #perfil {
@@ -931,7 +931,6 @@ nav {
   backdrop-filter: blur(13.5px);
   -webkit-backdrop-filter: blur(13.5px);
   position: relative;
-  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -955,7 +954,7 @@ nav {
 
 .card_projetos:hover .sobre_projeto {
   display: flex;
-  animation: slide-top 1s both;
+  animation: slide-top 0.5s both;
 }
 
 .item1 {
