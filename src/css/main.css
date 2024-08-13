@@ -291,11 +291,11 @@
 
 [data-anime].animate {
   opacity: 1;
-  transform: translate3d(0px, 0px, 0px);
+  transform: translateY(0px);
 }
 
 [data-anime=left] {
-  transform: translate3d(-200px, 0, 0);
+  transform: translateX(-200px) skewY(-3deg);
 }
 
 [data-anime=right] {
