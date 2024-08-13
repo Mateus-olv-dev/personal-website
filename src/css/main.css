@@ -302,6 +302,40 @@
   transform: translate3d(200px, 0, 0);
 }
 
+[data-animation] {
+  opacity: 0;
+  transition: 0.7s;
+}
+
+[data-animation].animation {
+  opacity: 1;
+  transform: skewY(-3deg);
+}
+
+[data-animation=right1] {
+  transform: skewY(2deg);
+}
+
+@keyframes flip {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    -webkit-transform-transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -webkit-transform-transform: scale(1);
+  }
+}
 #cabecalho {
   height: 10vh;
   width: 100%;
@@ -624,7 +658,7 @@ nav {
 }
 #sobre_mim {
   padding: 20px;
-  margin: 120px auto 60px auto;
+  margin: 40px auto 60px auto;
   border-radius: 50px;
   width: 85%;
   z-index: 1;
@@ -1083,19 +1117,12 @@ html ::-webkit-scrollbar-track {
 
 .feed {
   background-color: hsla(259, 81%, 54%, 0.2);
-  transform: skewY(-3deg);
   box-shadow: 0 8px 32px 0 rgba(64, 26, 146, 0.253);
-  padding: 20px;
-  width: 100%;
+  padding: 15px;
   font-family: "Space Grotesk";
   margin-top: 60px;
-  margin-bottom: 30px;
   font-size: 30px;
   color: #f6fbff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 

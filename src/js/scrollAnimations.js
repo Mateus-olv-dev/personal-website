@@ -37,3 +37,28 @@ if (target.length) {
     }, 100)
   );
 }
+
+const targetSecond = document.querySelectorAll('[data-animation]');
+const animationClassSecond = 'animation';
+
+function animeScroll2() {
+  const windowTop = window.pageYOffset + (window.innerHeight * 3) / 4;
+  targetSecond.forEach(function (element) {
+    if (windowTop > element.offsetTop - 100) {
+      element.classList.add(animationClassSecond);
+    } else {
+      element.classList.remove(animationClassSecond);
+    }
+  });
+}
+
+animeScroll2();
+
+if (target.length) {
+  window.addEventListener(
+    'scroll',
+    debounce(function () {
+      animeScroll2();
+    }, 100)
+  );
+}
