@@ -678,6 +678,12 @@ nav {
     margin-top: 30px;
   }
 }
+@media (max-width: 500px) {
+  .myphoto {
+    width: 150px;
+    height: 220px;
+  }
+}
 
 .myphoto::after {
   content: "";
