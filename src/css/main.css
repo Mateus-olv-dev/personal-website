@@ -808,7 +808,7 @@ nav {
 .slider {
   background-color: #181d25;
   height: 50px;
-  margin: auto;
+  margin: 50px auto 0 auto;
   overflow: hidden;
   position: relative;
   width: 65%;
@@ -831,7 +831,7 @@ nav {
   top: 0;
 }
 .slider .slide-track {
-  animation: scroll 10s linear infinite;
+  animation: scroll 20s linear infinite;
   display: flex;
   width: calc(150px * 7 * 2);
 }
@@ -877,6 +877,7 @@ nav {
 .skill {
   background-color: hsla(218, 22%, 7%, 0.2);
   display: flex;
+  justify-content: center;
   gap: 5px;
   align-items: center;
   height: 8vh;
@@ -894,55 +895,8 @@ nav {
   fill: #682AE9;
 }
 
-.skill:hover svg path {
-  fill: #fff;
-  transition: 0.5s;
-}
-
 .skill svg {
   margin: 0;
-}
-
-.skill:hover {
-  animation: girar2 0.5s normal;
-}
-
-#html:hover {
-  background-color: #ec6231;
-  transition: 0.5s;
-}
-
-#css:hover {
-  background-color: #1572B6;
-  transition: 0.5s;
-}
-
-#js:hover {
-  background-color: #e2cc22;
-  transition: 0.5s;
-}
-
-#sass:hover {
-  background-color: #CC6699;
-  transition: 0.5s;
-}
-
-#mysql:hover {
-  background-color: #4479A1;
-  transition: 0.5s;
-}
-
-#git:hover {
-  background-color: #F05032;
-  transition: 0.5s;
-}
-
-#seo:hover {
-  background-color: #f2eefd;
-}
-
-#seo:hover h3 {
-  color: #0B0E12;
 }
 
 @media (max-width: 750px) {
