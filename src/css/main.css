@@ -802,7 +802,7 @@ nav {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1750px);
+    transform: translateX(calc(-150px * 7));
   }
 }
 .slider {
@@ -833,7 +833,15 @@ nav {
 .slider .slide-track {
   animation: scroll 10s linear infinite;
   display: flex;
-  width: 500px;
+  width: calc(150px * 7 * 2);
+}
+.slider .slide {
+  flex: 0 0 150px;
+}
+@media (max-width: 750px) {
+  .slider {
+    width: 80vw;
+  }
 }
 
 #skills {
@@ -871,7 +879,7 @@ nav {
   display: flex;
   gap: 5px;
   align-items: center;
-  height: 10vh;
+  height: 8vh;
   padding: 10px;
   padding-right: 20px;
   cursor: pointer;

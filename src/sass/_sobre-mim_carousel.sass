@@ -1,16 +1,22 @@
 @use 'variaveis'
 
 @mixin white-gradient 
-  background: linear-gradient(to right, rgb(24, 29, 37) 0%,  rgba(24, 29, 37, 0.137)  100%)
+  background: linear-gradient(to right, rgb(24, 29, 37) 0%, rgba(24, 29, 37, 0.137) 100%)
+
 
 $animationSpeed: 10s
+$slideWidth: 150px
+$numSlides: 7
 
 // Animation
 @keyframes scroll 
-  0%  
+  0% 
     transform: translateX(0)
-  100%  
-    transform: translateX(calc(-250px * 7))
+  
+  100% 
+    transform: translateX(calc(-#{$slideWidth} * #{$numSlides}))
+  
+
 
 // Styling
 .slider 
@@ -20,7 +26,7 @@ $animationSpeed: 10s
   overflow: hidden
   position: relative
   width: 65%
-	
+
   &::before,
   &::after 
     @include white-gradient
@@ -29,21 +35,27 @@ $animationSpeed: 10s
     position: absolute
     width: 50px
     z-index: 2
-	
+  
+
   &::after 
     right: 0
     top: 0
     transform: rotateZ(180deg)
-	
+  
+
   &::before 
     left: 0
     top: 0
-	
+  
+
   .slide-track 
     animation: scroll $animationSpeed linear infinite
     display: flex
-    width: calc(250px * 2)
-	
-  // .slide 
-  //   height: 100px
-  //   width: 250px
+    width: calc(#{$slideWidth} * #{$numSlides} * 2) // Duplicando a largura para permitir a repetição
+  
+
+  .slide 
+    flex: 0 0 #{$slideWidth}// Define a largura dos slides
+  @media(max-width: 750px)
+    width: 80vw
+
