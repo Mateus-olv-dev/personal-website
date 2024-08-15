@@ -26,7 +26,8 @@ $numSlides: 7
   overflow: hidden
   position: relative
   width: 65%
-
+  @media(max-width: 750px)
+    width: 80vw
   &::before,
   &::after 
     @include white-gradient
@@ -56,8 +57,7 @@ $numSlides: 7
 
   .slide 
     flex: 0 0 #{$slideWidth}// Define a largura dos slides
-  @media(max-width: 750px)
-    width: 80vw
+  
 
 
 .skill

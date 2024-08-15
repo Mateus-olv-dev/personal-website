@@ -813,6 +813,11 @@ nav {
   position: relative;
   width: 65%;
 }
+@media (max-width: 750px) {
+  .slider {
+    width: 80vw;
+  }
+}
 .slider::before, .slider::after {
   background: linear-gradient(to right, rgb(24, 29, 37) 0%, rgba(24, 29, 37, 0.137) 100%);
   content: "";
@@ -837,11 +842,6 @@ nav {
 }
 .slider .slide {
   flex: 0 0 150px;
-}
-@media (max-width: 750px) {
-  .slider {
-    width: 80vw;
-  }
 }
 
 .skill {
