@@ -797,6 +797,45 @@ nav {
   top: 40%;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.slider {
+  background-color: #181d25;
+  height: 50px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 65%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgb(24, 29, 37) 0%, rgba(24, 29, 37, 0.137) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 50px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 10s linear infinite;
+  display: flex;
+  width: 500px;
+}
+
 #skills {
   padding-top: 20px;
   width: 100vw;
