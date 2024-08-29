@@ -1,0 +1,21 @@
+# Dependências do npm
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+
+# Arquivos de configuração que podem ser opcionais
+.babelrc
+
+# Dependência travada, ignore se não quiser versionar
+package-lock.json
+
+# Cache
+.cache/
+
+# Mapas de fontes
+*.css.map

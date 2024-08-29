@@ -11,13 +11,10 @@
   top: 0
   z-index: 1000
   gap: 50px
-  // backdrop-filter: blur(3px) contrast(101%)
+  backdrop-filter: blur(3px) contrast(101%)
   @media (max-width: 750px)
     height: 8vh
   
-.logo
-  margin-left: 70px
-  align-items: center
 
 nav 
   padding: 10px 0
@@ -28,44 +25,26 @@ nav
   justify-content: center
   align-items: center
   gap: 50px
+  margin-right: 5vw
 
 .nav-list li a
-
+  color: variaveis.$text-color
+  text-decoration: none
+  font-family: "DM Sans"
+  font-weight: bold
+  font-size: 15px
   display: inline-block
   animation: scale-in-center 0.4s forwards
+
+.nav-list li:last-child a
+  border-radius: 10px
+  padding: 8px
+  background-color: hsla(259, 81%, 54%, 0.5)
+ 
 .nav-list li a img
   height: 32px
 .nav-list li a img:hover
   opacity: 70%
-  transition: 0.3s
-.navegation
-  font-size: 18px
-  letter-spacing: 2px
-  text-decoration: none
-  color: variaveis.$text-color
-  font-weight: 600
-  padding: 8px
-  border-radius: 10px
-
-
-.navegation:hover 
-  background-color:  #1A2029
-  transition: 0.3s
-
-.navegation_projetos
-  background-color: variaveis.$roxo-claro
-  font-size: 18px
-  letter-spacing: 0.5px
-  text-decoration: none
-  color: variaveis.$text-color
-  font-weight: 600
-  padding: 8px  
-  border-radius: 10px
-  border: variaveis.$roxo-claro solid 1.5px
-
-
-.navegation_projetos:hover 
-  background-color: variaveis.$roxo-escuro
   transition: 0.3s
 
 

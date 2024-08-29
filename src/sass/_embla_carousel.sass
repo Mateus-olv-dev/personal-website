@@ -1,0 +1,58 @@
+@use 'variaveis'
+
+@mixin white-gradient 
+  background: linear-gradient(to right, rgba(24, 29, 37, 1) 0%, rgba(24, 29, 37, 0) 100%)
+
+
+
+.skills
+  display: flex
+  flex-direction: column
+  gap: 20px
+.tec_text
+  text-align: start
+  color: variaveis.$text-color
+  opacity: 0.6
+  font-family: "DM Sans"
+  margin: 5vh 0 0 0
+
+.embla
+  position: relative
+  overflow: hidden
+  max-width: 50vw
+  margin: auto
+  --slide-height: 19rem
+  --slide-spacing: 0.5rem
+  --slide-size: 25%
+  background-color: #0e11160e
+  padding: 10px 0
+  mask-image: radial-gradient(circle, rgba(14, 17, 21, 0.8) 80%, rgba(14, 17, 21, 0) 100%)
+  @media(max-width: 1000px)
+    margin: 0
+    max-width: 85vw
+
+.embla__viewport
+  overflow: hidden
+
+.embla__container
+  display: flex
+  margin-left: calc(var(--slide-spacing) * -1)
+  will-change: transform
+
+.embla__slide
+  transform: translate3d(0, 0, 0)
+  flex: 0 0 var(--slide-size)
+  min-width: 0
+  padding-left: var(--slide-spacing)
+  font-family: "DM Sans"
+  font-size: 20px
+  font-weight: bold
+  background-image: -webkit-linear-gradient(45deg, #520A89 0%, #682AE9 25%, #6f2dfc 50%, #3b08a8 75%)
+  background-clip: text
+  -webkit-background-clip: text
+  text-fill-color: transparent
+  -webkit-text-fill-color: transparent
+  @media(max-width: 750px)
+    font-size: 16px
+.embla__sep
+  width: 50px

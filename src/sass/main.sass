@@ -4,13 +4,11 @@
 
 // Seções
 @use '_header'
-@use '_mobile-menu'
 @use '_home'
 @use '_sobre-mim'
-@use '_sobre-mim_carousel'
 @use '_projetos'
 @use '_footer'
-
+@use '_embla_carousel'
 * 
   padding: 0
   margin: 0
@@ -21,9 +19,13 @@ html
   scroll-behavior: smooth
 
 
-body 
+body
+  background-image: url('../imgs/background1.png')
+  background-position: center
   background-color: variaveis.$body-color
   overflow-x: hidden
+  background-attachment: fixed
+  background-size: cover
 
 
 html ::-webkit-scrollbar 
@@ -44,10 +46,12 @@ html ::-webkit-scrollbar-track
 
 
 .feed
-  // background-color: hsla(259, 81%, 54%, 0.2)
-  // box-shadow: 0 25px 32px 0 rgba(64, 26, 146, 0.253)
-  // padding: 15px
-  // width: 100%
+  color: #210b41
+  background-image: -webkit-linear-gradient(45deg, #520A89 0%, #682AE9 25%, #6f2dfc 50%, #3b08a8 75%) 
+  background-clip: text 
+  -webkit-background-clip: text 
+  text-fill-color: transparent 
+  -webkit-text-fill-color: transparent
   font-family: "Space Grotesk"
   margin-top: 60px
   margin-bottom: 60px
@@ -84,100 +88,99 @@ html ::-webkit-scrollbar-track
   
 
 
-.circle
-  position: absolute
-  border-radius: 50%
-  background: white
-  animation: rotate-scale-down2 15s  cubic-bezier(0.68, -0.6, 0.32, 1.6) infinite, focus 1s normal
-  box-shadow: 0px 0px 1px 0px variaveis.$shadow-color
+// .circle
+//   position: absolute
+//   border-radius: 50%
+//   background: white
+//   animation: rotate-scale-down2 15s  cubic-bezier(0.68, -0.6, 0.32, 1.6) infinite, focus 1s normal
+//   box-shadow: 0px 0px 1px 0px variaveis.$shadow-color
 
-@media (max-width: 450px)
-  .circle
-    animation: ripple 15s infinite, focus 1s normal
-
-
-.small
-  background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
-  box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5)
-  opacity: 70%
-  width: 200px
-  height: 200px
-  right: -100px
-  top: -100px
-.medium
-  background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
-  box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5)
-  opacity: 70%
-  width: 400px
-  height: 400px
-  right: -200px
-  top: -200px
-  @media (max-width: 450px)
-    top: -350
-    right: -350
-.large
-  box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5) 
-  background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
-  opacity: 70%
-  width: 600px
-  height: 600px
-  right: -300px
-  top: -300px
-  @media (max-width: 450px)
-    top: -450
-    right: -450
-.xlarge
-  background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
-  box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5)
-  opacity: 70%
-  width: 800px
-  height: 800px
-  right: -400px
-  top: -400px
-  @media (max-width: 450px)
-    top: -550
-    right: -550
-.xxlarge
-  background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
-  box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5)
-  opacity: 70%
-  width: 1000px
-  height: 1000px
-  right: -500px
-  top: -500px
-  @media (max-width: 450px)
-    top: -650
-    right: -650
-.shade1
-  opacity: 0.4
-
-.shade2
-  opacity: 0.7
+// @media (max-width: 450px)
+//   .circle
+//     animation: ripple 15s infinite, focus 1s normal
 
 
-.shade3
-  opacity: 0.9
+// .small
+//   background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
+//   box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5)
+//   opacity: 70%
+//   width: 200px
+//   height: 200px
+//   right: -100px
+//   top: -100px
+// .medium
+//   background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
+//   box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5)
+//   opacity: 70%
+//   width: 400px
+//   height: 400px
+//   right: -200px
+//   top: -200px
+//   @media (max-width: 450px)
+//     top: -350
+//     right: -350
+// .large
+//   box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5) 
+//   background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
+//   opacity: 70%
+//   width: 600px
+//   height: 600px
+//   right: -300px
+//   top: -300px
+//   @media (max-width: 450px)
+//     top: -450
+//     right: -450
+// .xlarge
+//   background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
+//   box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5)
+//   opacity: 70%
+//   width: 800px
+//   height: 800px
+//   right: -400px
+//   top: -400px
+//   @media (max-width: 450px)
+//     top: -550
+//     right: -550
+// .xxlarge
+//   background: linear-gradient(135deg, #4d1faf, hsl(265, 69%, 31%), hsl(265, 69%, 23%), hsl(265, 69%, 15%))
+//   box-shadow: 0 0 20px 5px rgba(77, 31, 175, 0.7), inset 0 0 10px rgba(77, 31, 175, 0.5)
+//   opacity: 70%
+//   width: 1000px
+//   height: 1000px
+//   right: -500px
+//   top: -500px
+//   @media (max-width: 450px)
+//     top: -650
+//     right: -650
+// .shade1
+//   opacity: 0.4
+
+// .shade2
+//   opacity: 0.7
 
 
-.shade4
-  opacity: 1.0
+// .shade3
+//   opacity: 0.9
 
 
-.shade5
-  opacity: 1.2
+// .shade4
+//   opacity: 1.0
 
 
-@keyframes ripple
-  0%
-    transform: scale(0.4)
+// .shade5
+//   opacity: 1.2
+
+
+// @keyframes ripple
+//   0%
+//     transform: scale(0.4)
   
   
-  50%
-    transform: scale(0.6)
+//   50%
+//     transform: scale(0.6)
   
   
-  100%
-    transform: scale(0.4)
+//   100%
+//     transform: scale(0.4)
   
-#projetos, #skills, #sobre_mim
-  box-shadow: 0 -8px 15px 0 rgba(64, 26, 146, 0.253)
+

@@ -1,56 +1,20 @@
-const copyButton = document.querySelector('.copy_button');
-const textToCopy = document.querySelector('.email');
-const emailAfter = document.querySelector('.email_after');
-const imgButton1 = document.querySelector('.img_button1');
-const imgButton2 = document.querySelector('.img_button2');
+// src/js/main.js
+import './scrollAnimations';
+import EmblaCarousel from 'embla-carousel';
+import AutoScroll from 'embla-carousel-auto-scroll';
 
-const nVisivel = () => {
-  textToCopy.style.display = 'none';
-};
+const emblaNode = document.querySelector('.embla');
+const viewportNode = emblaNode.querySelector('.embla__viewport');
 
-const visible = () => {
-  emailAfter.style.display = 'block';
-};
+// Configurações do Embla Carousel e do AutoScroll
+const OPTIONS = { loop: true };
+const AUTO_SCROLL_OPTIONS = { delay: 5000 }; // Ajuste o delay conforme necessário
 
-const trocarImg = () => {
-  imgButton1.style.display = 'none';
-  imgButton2.style.display = 'block';
-};
+const emblaApi = EmblaCarousel(viewportNode, OPTIONS, [
+  AutoScroll(AUTO_SCROLL_OPTIONS),
+]);
 
-copyButton.addEventListener('click', () => {
-  const range = document.createRange();
-  range.selectNode(textToCopy);
-  window.getSelection().removeAllRanges();
-  window.getSelection().addRange(range);
-  document.execCommand('copy');
-  window.getSelection().removeAllRanges();
-  //  mudarTxt()
-  nVisivel();
-  visible();
-  trocarImg();
-});
+// Não é necessário adicionar funções para os botões de navegação e controle do autoscroll
+// Se desejar adicionar outros comportamentos, pode fazê-lo aqui
 
-const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
-const mobileMenu = document.querySelector('.mobile-menu');
-
-document.addEventListener('DOMContentLoaded', () => {
-  const menuOpen = document.querySelector('.menu-open');
-  const menuClose = document.querySelector('.menu-close');
-
-  const toggleMenu = () => {
-    if (
-      mobileMenu.style.display === 'none' ||
-      mobileMenu.style.display === ''
-    ) {
-      mobileMenu.style.display = 'block';
-      menuOpen.style.display = 'none';
-      menuClose.style.display = 'block';
-    } else {
-      mobileMenu.style.display = 'none';
-      menuOpen.style.display = 'block';
-      menuClose.style.display = 'none';
-    }
-  };
-
-  mobileMenuIcon.addEventListener('click', toggleMenu);
-});
+// Adicione event listeners ou outras funcionalidades, se necessário

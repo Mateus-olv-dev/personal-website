@@ -5,100 +5,107 @@
     
 #home
   min-height: 100vh
-  max-height: 600px
   display: flex
   flex-direction: column
-  justify-content: space-around
-  position: relative
-  overflow: hidden
-  background-color: variaveis.$body-color
-#perfil
-  display: flex
-  flex-direction: column
-  gap: 40px
-  margin: 15vh 0 0 15vw
+  gap: 50px
   
+  
+.hero_section
+  width: 100vw
+  display: flex
+  flex-direction: row
+  justify-content: center
+  gap: 8vw
+  @media (max-width: 1000px)
+    flex-direction: column-reverse
+    align-items: center
+    gap: 10px
+#perfil 
+  display: flex
+  flex-direction: column
+  gap: 10px
+  margin: 15vh 0 0 0
+  @media (max-width: 1000px)
+    margin: 0px
+    align-items: center
+#perfil h3
+  font-family: "DM Sans"
+  color: variaveis.$text-color
 .nome_banner
   font-family: "Space Grotesk"
-  color: variaveis.$text-color
-  font-size: 80px
+  font-size: 86px
   font-weight: 600
   z-index: 2
   animation: focus-in-expand 1s normal
+  color: #210b41
+  background-image: -webkit-linear-gradient(45deg, #520A89 0%, #682AE9 25%, #6f2dfc 50%, #3b08a8 75%) 
+  background-clip: text 
+  -webkit-background-clip: text 
+  text-fill-color: transparent 
+  -webkit-text-fill-color: transparent
+          
+        
+#sobre_mim
+  padding: 20px
+  border-radius: 50px
+  z-index: 1
 
-
-.subtitulos_banner
+.textos_sobre_mim
+  width: 40vw
+  @media(max-width: 1000px)
+    width: 80vw
+.sobre_mim_text
+  margin-top: 20px
+  text-align: start
   font-family: "DM Sans"
-  color: variaveis.$text-color
-  line-height: 50px
-  font-weight: 400
-  letter-spacing: 0px
-  z-index: 2
-  animation: focus-in-expand 1s normal
-
-
-.detail_sub
-  background-color: hsla(259, 81%, 54%, 0.3)
-  padding: 2px
-
-
-
-.email_box
-  background-color: hsla(259, 81%, 54%, 0.3)
-  width: 30vw
-  height: 50px
-  display: flex
-  align-items: center
-  justify-content: space-between
-  margin-left: 15vw
-  z-index: 2
-  box-shadow: 0 8px 32px 0 rgba(64, 26, 146, 0.253)
-  animation: focus 1s normal
-.email
   color: variaveis.$text-color
   font-size: 18px
-  font-family: "DM Sans"
-  margin: 0 auto
-  text-align: center
-  font-weight: 400
-  letter-spacing: 0.8px
+  font-weight: 500
+  line-height: 30px
+  margin-bottom: 20px
+  @media(max-width: 750px)
+    font-size: 16px
+    line-height: 30px
+    text-align: center
+.sobre_mim_text span
+  color: variaveis.$roxo-claro
+@media(max-width: 750px)
+  #sobre_mim
+    margin: 30px 0px 30px 0px
 
 
-.email_after
-  color: variaveis.$text-color
-  margin: 0 auto
-  font-size: 18px
-  font-family: "DM Sans"
-  letter-spacing: 0.8px
-  font-weight: 400
+.photo
+  margin-top: 20vh
+  position: relative
+  width: 300px
+  height: 400px
+  @media (max-width: 1000px)
+    margin-top: 10vh
+    width: 150px
+    height: 200px
+.photo_detail
+  z-index: -1
+  bottom: 5%
+  right: -6%
+  position: absolute
+  width: 100%
+  height: 100%
+  border: 1px solid #401a92
+  background-image: -webkit-linear-gradient(45deg, #520A89 0%, #682AE9 25%, #6f2dfc 50%, #3b08a8 75%) 
+.profile_pic
+  width: 100%
+  height: auto
+  border: 1px solid #401a92 
 
-.email, .email_after
-  animation: scale-up-center 0.3s normal
 
-.copy_button
-  background-color: hsla(259, 81%, 54%, 0.1)
-  height: 50px
-  width: 50px
-  display: flex
-  justify-content: center
-  align-items: center
-  border: none
-  cursor: pointer
 
-.copy_button:hover
-  background-color: variaveis.$roxo-escuro
-  transition: 0.2s
 
-.copy_button:active
-  background-color: #4d1faf
 
-.email_box:hover
-  opacity: 80%
-  transition: 0.5s
-  box-shadow: 0px 0px 0px 
 
-.img_button1, .img_button2
-  animation: scale-up-center 0.3s normal
+
+
+
+
 
 @media (max-width: 1350px)
   .nome_banner
@@ -115,11 +122,11 @@
     gap: 120px
     // margin-top: 10%
 
-  #perfil
-    margin: 10vh auto 0 auto
-    margin-right: auto
-    padding: 0
-    align-items: center
+  // #perfil
+  //   margin: 10vh auto 0 auto
+  //   margin-right: auto
+  //   padding: 0
+   
 
   .nome_banner
     font-size: 40px
@@ -129,38 +136,12 @@
     font-size: 15px
     text-align: center
 
-  #container_sociais
-    flex-direction: column-reverse
-    gap: 40px
-    margin: 20px 0 0 0
-    justify-content: center
-  .email_box
-    padding-left: 10px
-    margin: 0
-    width: 70vw
-    height: 50px
-
-  .email
-    font-size: 14px
-    margin: auto
-
-  .email_after
-    font-size: 14.5px
-    margin: auto
-
-  .copy_button
-    height: 50px
-    margin: 0
-  .links_home
-    width: 32vw
+  
  
 @media (max-width: 450px)
   .subtitulos_banner
     font-size: 15px
     text-align: center
-  .email_box
-    margin: 0
-    width: 65vw
-    height: 50px
   
+
 
