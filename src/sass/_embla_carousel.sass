@@ -29,8 +29,9 @@
   mask-image: radial-gradient(circle, rgba(14, 17, 21, 0.8) 80%, rgba(14, 17, 21, 0) 100%)
   @media(max-width: 1000px)
     margin: 0
-    max-width: 85vw
-
+    max-width: 80vw
+  @media(max-width: 500px)
+    max-width: 90vw
 .embla__viewport
   overflow: hidden
 
@@ -41,9 +42,10 @@
 
 .embla__slide
   transform: translate3d(0, 0, 0)
-  flex: 0 0 var(--slide-size)
+  flex: 0 0 auto
   min-width: 0
-  padding-left: var(--slide-spacing)
+  max-width: 100%
+  padding-left: 50px
   font-family: "DM Sans"
   font-size: 20px
   font-weight: bold

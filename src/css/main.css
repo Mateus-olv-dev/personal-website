@@ -390,7 +390,7 @@ nav {
   .hero_section {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
   }
 }
 
@@ -404,6 +404,7 @@ nav {
   #perfil {
     margin: 0px;
     align-items: center;
+    gap: 0px;
   }
 }
 
@@ -424,12 +425,6 @@ nav {
   -webkit-background-clip: text;
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
-}
-
-#sobre_mim {
-  padding: 20px;
-  border-radius: 50px;
-  z-index: 1;
 }
 
 .textos_sobre_mim {
@@ -477,8 +472,8 @@ nav {
 @media (max-width: 1000px) {
   .photo {
     margin-top: 10vh;
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 250px;
   }
 }
 
@@ -531,8 +526,8 @@ nav {
   }
 }
 #projetos {
+  padding-bottom: 50px;
   margin: 50px auto;
-  border-radius: 50px;
   width: 100vw;
   z-index: 1;
   overflow: hidden;
@@ -720,7 +715,12 @@ footer {
 @media (max-width: 1000px) {
   .embla {
     margin: 0;
-    max-width: 85vw;
+    max-width: 80vw;
+  }
+}
+@media (max-width: 500px) {
+  .embla {
+    max-width: 90vw;
   }
 }
 
@@ -736,9 +736,10 @@ footer {
 
 .embla__slide {
   transform: translate3d(0, 0, 0);
-  flex: 0 0 var(--slide-size);
+  flex: 0 0 auto;
   min-width: 0;
-  padding-left: var(--slide-spacing);
+  max-width: 100%;
+  padding-left: 50px;
   font-family: "DM Sans";
   font-size: 20px;
   font-weight: bold;
