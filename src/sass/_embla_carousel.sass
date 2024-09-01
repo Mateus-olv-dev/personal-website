@@ -1,4 +1,5 @@
 @use 'variaveis'
+@use 'animacoes'
 
 @mixin white-gradient 
   background: linear-gradient(to right, rgba(24, 29, 37, 1) 0%, rgba(24, 29, 37, 0) 100%)
@@ -15,6 +16,7 @@
   opacity: 0.6
   font-family: "DM Sans"
   margin: 5vh 0 0 0
+  animation: focus-in-expand 1s normal
 
 .embla
   position: relative
@@ -56,5 +58,3 @@
   -webkit-text-fill-color: transparent
   @media(max-width: 750px)
     font-size: 16px
-.embla__sep
-  width: 50px

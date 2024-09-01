@@ -328,7 +328,7 @@
   gap: 50px;
   backdrop-filter: blur(3px) contrast(101%);
 }
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   #cabecalho {
     height: 8vh;
   }
@@ -390,7 +390,7 @@ nav {
   .hero_section {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
   }
 }
 
@@ -402,7 +402,7 @@ nav {
 }
 @media (max-width: 1000px) {
   #perfil {
-    margin: 0px;
+    margin-top: 5%;
     align-items: center;
     gap: 0px;
   }
@@ -698,6 +698,7 @@ footer {
   opacity: 0.6;
   font-family: "DM Sans";
   margin: 5vh 0 0 0;
+  animation: focus-in-expand 1s normal;
 }
 
 .embla {
@@ -753,10 +754,6 @@ footer {
   .embla__slide {
     font-size: 16px;
   }
-}
-
-.embla__sep {
-  width: 50px;
 }
 
 * {
