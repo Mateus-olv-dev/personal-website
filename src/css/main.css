@@ -546,7 +546,7 @@ nav {
   min-width: 350px;
   width: 30vw;
   min-height: 400px;
-  background: hsl(217, 21%, 15%);
+  background: hsla(217, 21%, 15%, 0.3);
   backdrop-filter: blur(13.5px);
   -webkit-backdrop-filter: blur(13.5px);
   position: relative;
@@ -767,7 +767,7 @@ html {
 }
 
 body {
-  background-image: url("../imgs/background1.png");
+  background-image: url("../imgs/background2.png");
   background-position: center;
   background-color: #181d25;
   overflow-x: hidden;
