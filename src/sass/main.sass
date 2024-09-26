@@ -19,9 +19,9 @@ html
 
 
 body
-  background-image: url('../imgs/background2.png')
-  background-position: center
-  background-color: variaveis.$body-color
+  // background-image: url('../imgs/background2.png')
+  // background-position: center
+  background-color: rgb(25, 25, 28)
   overflow-x: hidden
   background-attachment: fixed
   background-size: cover
@@ -45,19 +45,14 @@ html ::-webkit-scrollbar-track
 
 
 .feed
-  color: #210b41
-  background-image: -webkit-linear-gradient(45deg, #520A89 0%, #682AE9 25%, #6f2dfc 50%, #3b08a8 75%) 
-  background-clip: text 
-  -webkit-background-clip: text 
-  text-fill-color: transparent 
-  -webkit-text-fill-color: transparent
-  font-family: "Space Grotesk"
   margin-top: 60px
   margin-bottom: 60px
   font-size: 30px
-  color: variaveis.$text-color
   text-align: center
-
+.feed h2
+  color: #fff
+  opacity: 0.7
+  font-family: "Space Grotesk" 
 @media (max-width: 750px)
   .feed 
     margin: 0px 0px 0px 0px

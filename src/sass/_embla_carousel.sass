@@ -11,9 +11,10 @@
   flex-direction: column
   gap: 20px
 .tec_text
+  font-size: 20px
   text-align: start
   color: variaveis.$text-color
-  opacity: 0.6
+  opacity: 0.2
   font-family: "DM Sans"
   margin: 5vh 0 0 0
   animation: focus-in-expand 1s normal
@@ -51,10 +52,12 @@
   font-family: "DM Sans"
   font-size: 20px
   font-weight: bold
-  background-image: -webkit-linear-gradient(45deg, #520A89 0%, #682AE9 25%, #6f2dfc 50%, #3b08a8 75%)
-  background-clip: text
+  background: linear-gradient(45deg,#44bff0,#446cf0, #4944f0,#7873f5,#572CF3,#682AE9, #3b08a8 ,#3b08a8)
+  background-size: 200% 200%
   -webkit-background-clip: text
-  text-fill-color: transparent
-  -webkit-text-fill-color: transparent
+  background-clip: text
+  color: transparent
+  animation: gemini-text-animation 3s ease infinite
+          
   @media(max-width: 750px)
     font-size: 16px

@@ -15,7 +15,7 @@
   display: flex
   flex-direction: row
   justify-content: center
-  gap: 8vw
+  gap: 7vw
   @media (max-width: 1000px)
     flex-direction: column-reverse
     align-items: center
@@ -32,22 +32,24 @@
 #perfil h3
   font-family: "DM Sans"
   color: variaveis.$text-color
+  opacity: 0.8
+  animation: focus-in-expand 1s normal
+
+
 .nome_banner
   font-family: "Space Grotesk"
   font-size: 86px
   font-weight: 600
   z-index: 2
-  animation: focus-in-expand 1s normal
-  color: #210b41
-  background-image: -webkit-linear-gradient(45deg, #520A89 0%, #682AE9 25%, #6f2dfc 50%, #3b08a8 75%) 
-  background-clip: text 
-  -webkit-background-clip: text 
-  text-fill-color: transparent 
-  -webkit-text-fill-color: transparent
+  // animation: focus-in-expand 1s normal
+  background: linear-gradient(45deg,#44bff0,#446cf0, #4944f0,#7873f5,#572CF3,#682AE9, #3b08a8 ,#3b08a8)
+  background-size: 200% 200%
+  -webkit-background-clip: text
+  background-clip: text
+  color: transparent
+  animation: gemini-text-animation 6s ease infinite
           
         
-
-
 .textos_sobre_mim
   width: 40vw
   @media(max-width: 1000px)
@@ -57,6 +59,7 @@
   text-align: start
   font-family: "DM Sans"
   color: variaveis.$text-color
+  opacity: 0.8
   font-size: 18px
   font-weight: 500
   line-height: 30px
@@ -71,6 +74,34 @@
   #sobre_mim
     margin: 30px 0px 30px 0px
 
+.social-group
+  margin: 30px 0 0 0 
+  display: flex
+  gap: 20px
+.social-links
+  display: flex
+  align-items: center
+  gap: 5px
+  color: #a8a8a8
+  text-decoration: none
+  font-family: "DM Sans"
+  font-weight: 400
+  font-size: 20px
+  padding: 15px 40px
+  border: 1px solid rgba(168, 168, 168, 0.15)
+  transition: 0.3s ease
+.social-links:hover
+  border: 1px solid rgba(87, 44, 243, 0.3)
+  color: #fff
+  transition: 0.3s
+.social-links:hover img
+  fill: #fff
+
+.social-links img
+  margin-bottom: 3%
+  vertical-align: middle
+  height: 25px
+  width: auto
 
 .photo
   margin-top: 20vh
@@ -89,12 +120,14 @@
   position: absolute
   width: 100%
   height: 100%
-  border: 1px solid #401a92
-  background-image: -webkit-linear-gradient(45deg, #520A89 0%, #682AE9 25%, #6f2dfc 50%, #3b08a8 75%) 
+  border: 1px solid #4a44f0a4
+  background: linear-gradient(45deg,#44bff0,#446cf0, #4944f0,#7873f5,#572CF3,#682AE9, #3b08a8 ,#3b08a8)
+  background-size: 300% 300%
+  animation: gemini-text-animation 5s ease infinite 
 .profile_pic
   width: 100%
   height: auto
-  border: 1px solid #401a92 
+  border: 1px solid #401a9241
 
 
 

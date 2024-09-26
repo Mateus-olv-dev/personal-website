@@ -17,95 +17,41 @@
 .card_projetos
   min-width: 350px
   width: 30vw
-  min-height: 400px
-  background: hsla(217, 21%, 15%,0.3)
-  backdrop-filter: blur( 13.5px )
-  -webkit-backdrop-filter: blur( 13.5px )
-  position: relative
+  min-height: 500px
+  background-color: rgb(20, 20, 23)
   display: flex
-  align-items: flex-start
-  justify-content: center
+  flex-direction: column
   overflow: hidden
   padding-top: 20px
+  gap: 30px
 .card_projetos:hover
-  box-shadow: 0 8px 32px 0 rgba(64, 26, 146, 0.253)
+  border: 1px solid rgba(87, 44, 243, 0.1)
   transition: 0.3s
 
-.card_projetos:hover img
-  animation: scale-up 1s both
-  opacity: 70%
-.card_projetos:hover .sobre_projeto
-  display: flex
-  animation: slide-top 0.5s both
-.item1 
-  max-width: 500px//Temporario
-
-.item3 
-  max-width: 500px//Temporario
-.item1 img
-  width: 85%
-  height: 60%
-.item3 img
-  width: 85%
-  height: 60%
-.sobre_projeto
-  display: none
-  position: absolute
-  bottom: 0
-  width: 100%
-  height: 70%
-  background-color: hsla(217, 21%, 15%, 0.95)
-  border-radius: 0px 0px 20px 20px
-  align-items: center
-  justify-content: space-evenly
-  flex-direction: column
-  z-index: 2
-.sobre_projeto h2
-  font-family: 'DM Sans'
-  color: variaveis.$text-color
-  text-align: center
-  
-.acessar_projeto
-  display: flex
-  gap: 30px
-  margin-top: 50px
-  z-index: 10
-
-.acessar_projeto img
-  height: 30px
-  width: 20px
-.code_projeto
-  background-color: hsla(259, 81%, 54%, 0.5)
-  min-width: 70px
-  border-radius: 10px
-  text-decoration: none
-  display: flex
-  align-items: center
-  justify-content: center 
-  color: variaveis.$text-color
-  font-size: 20px
-  font-family: 'Roboto'
-  font-weight: bold
-.code_projeto:hover
-  animation: heartbeat 2s infinite
-  background-color: #421d92 
-  transition: 0.5s
-.small-button
-  align-self: end 
-  padding: 10px
-  background-color: hsla(259, 81%, 54%, 0.2)
-  color: variaveis.$text-color
-  font-weight: bold
-  letter-spacing: 0.8px
-  border: none
-  cursor: pointer
-  margin-top: 40px
-  width: calc(100% - 40%)
+.image
+  opacity: 0.5
   margin: 0 auto
+  width: 90%
+  height: 50%
+  overflow: hidden
 
-.small-button:hover
-  background-color: hsla(259, 81%, 54%, 1)
-  transition: 1s
+.image img 
+  width: 100%
+  height: 100%
+.card_projetos:hover .image img
+  animation: scale-up 0.5s both ease
+
+.project_info h3
+  text-align: justify
+  margin-left: 5%
+  color: #fff
+  font-family: "DM Sans"
+  font-size: 20px
+  opacity: 0.7
+
+
+
+
 
 
 
