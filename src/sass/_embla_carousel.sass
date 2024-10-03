@@ -43,6 +43,7 @@
   margin-left: calc(var(--slide-spacing) * -1)
   will-change: transform
 
+
 .embla__slide
   transform: translate3d(0, 0, 0)
   flex: 0 0 auto
@@ -57,7 +58,34 @@
   -webkit-background-clip: text
   background-clip: text
   color: transparent
-  animation: gemini-text-animation 3s ease infinite
+  animation: gradient-animation 3s ease infinite
           
   @media(max-width: 750px)
     font-size: 16px
+
+
+.expand_skills
+  display: flex
+  gap: 40px
+
+.expand_skills div
+  display: flex
+  gap: 5px
+  align-items: center
+  font-family: "DM Sans"
+  font-size: 20px
+  font-weight: bold
+  background: linear-gradient(45deg,#44bff0,#446cf0, #4944f0,#7873f5,#572CF3,#682AE9, #3b08a8 ,#3b08a8)
+  background-size: 200% 200%
+  -webkit-background-clip: text
+  background-clip: text
+  color: transparent
+  animation: gradient-animation 3s ease infinite
+  padding: 10px 20px
+  border: 1px solid rgba(168, 168, 168, 0.15)
+.expand_skills div svg
+  margin-bottom: 2%
+
+// .expand_skills div img
+//   height: 30px
+//   width: auto

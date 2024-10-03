@@ -33,6 +33,7 @@
   font-family: "DM Sans"
   color: variaveis.$text-color
   opacity: 0.8
+  font-weight: 400
   animation: focus-in-expand 1s normal
 
 
@@ -47,7 +48,7 @@
   -webkit-background-clip: text
   background-clip: text
   color: transparent
-  animation: gemini-text-animation 6s ease infinite
+  animation: gradient-animation 6s ease infinite
           
         
 .textos_sobre_mim
@@ -61,7 +62,7 @@
   color: variaveis.$text-color
   opacity: 0.8
   font-size: 18px
-  font-weight: 500
+  font-weight: 400
   line-height: 30px
   margin-bottom: 20px
   @media(max-width: 750px)
@@ -79,6 +80,7 @@
   display: flex
   gap: 20px
 .social-links
+  cursor: pointer
   display: flex
   align-items: center
   gap: 5px
@@ -90,6 +92,10 @@
   padding: 15px 40px
   border: 1px solid rgba(168, 168, 168, 0.15)
   transition: 0.3s ease
+  @media (max-width: 750px)
+    font-size: 15px
+    padding: 10px 20px
+
 .social-links:hover
   border: 1px solid rgba(87, 44, 243, 0.3)
   color: #fff
@@ -123,7 +129,7 @@
   border: 1px solid #4a44f0a4
   background: linear-gradient(45deg,#44bff0,#446cf0, #4944f0,#7873f5,#572CF3,#682AE9, #3b08a8 ,#3b08a8)
   background-size: 300% 300%
-  animation: gemini-text-animation 5s ease infinite 
+  animation: gradient-animation 5s ease infinite 
 .profile_pic
   width: 100%
   height: auto
